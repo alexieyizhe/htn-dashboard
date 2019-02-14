@@ -6,12 +6,12 @@ const siteStyles = {
 
     blue: '#68B0E5',
     green: '#5CBF6B',
-    
+
     warning: '#F4A867',
     error: '#F07285',
   },
   defaults: {
-    radius: '10px',
+    borderRadius: '10px',
     fontWeight: '600'
   }
 }

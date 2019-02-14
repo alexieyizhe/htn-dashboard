@@ -19,7 +19,7 @@ export const mediaSize = Object.keys(displaySizes).reduce((acc, label) => {
 
 
 export const GlobalStyles = createGlobalStyle`
-  html, body {
+  html, body, * {
     margin: 0;
     padding: 0;
 

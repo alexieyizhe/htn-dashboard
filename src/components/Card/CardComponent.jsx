@@ -17,11 +17,14 @@ const CardContainer = styled.div`
   color: white;
   background-color: ${props => props.completed ? props.theme.colors.green : props.theme.colors.blue};
 
+  border-radius: ${props => props.theme.defaults.borderRadius};
+  cursor: pointer;
+
   will-change: transform;
-  transition: transform: 300ms ease-in-out;
-  transform: scale(1.01);
+  transition: transform 250ms ease-in-out;
+  transform: scale(1.0);
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 `;
 
@@ -37,12 +40,12 @@ const CardCheckmark = styled.img`
 `;
 
 
-const DashboardCard = ({
+const Card = ({
     className,
     label = "DEFAULT LABEL",
     completed = false,
     backgroundImg,
-    clickHandler,
+    clickHandler = () => console.log(`You clicked ${label}`),
 }) => (
   <CardContainer
     className={className}
@@ -56,4 +59,4 @@ const DashboardCard = ({
 );
 
 
-export default DashboardCard;
+export default Card;
