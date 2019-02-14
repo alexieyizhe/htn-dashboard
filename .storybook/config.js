@@ -7,9 +7,9 @@ import {
 } from "@storybook/react";
 
 // import createPercyAddon from "@percy-io/percy-storybook";
-import { ThemeProvider } from "grommet";
+import { ThemeProvider } from "styled-components";
 import siteStyles from "../src/utils/siteStyles";
-// import { GlobalStyles } from "../src/utils/siteTools";
+import { GlobalStyles } from "../src/utils/siteTools";
 
 const req = require.context("../src", true, /\.stories\.jsx$/);
 
