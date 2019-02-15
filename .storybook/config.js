@@ -7,9 +7,8 @@ import {
 } from "@storybook/react";
 
 // import createPercyAddon from "@percy-io/percy-storybook";
-import { ThemeProvider } from "grommet";
-import siteStyles from "../src/utils/siteStyles";
-// import { GlobalStyles } from "../src/utils/siteTools";
+import { ThemeProvider } from "styled-components";
+import siteTheme, { GlobalStyles } from "../src/utils/siteStyles";
 
 const req = require.context("../src", true, /\.stories\.jsx$/);
 
@@ -18,9 +17,9 @@ function loadStories() {
 }
 
 addDecorator(story => (
-  <ThemeProvider theme={siteStyles}>
+  <ThemeProvider theme={siteTheme}>
     <>
-      // <GlobalStyles />
+      <GlobalStyles />
       {story()}
     </>
   </ThemeProvider>
