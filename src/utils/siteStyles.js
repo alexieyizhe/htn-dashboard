@@ -38,6 +38,7 @@ const siteTheme = {
   },
   defaults: {
     borderRadius: '10px',
+    borderRadiusRound: '50px',
     fontWeight: '600'
   }
 }
