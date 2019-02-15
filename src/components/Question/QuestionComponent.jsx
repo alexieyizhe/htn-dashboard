@@ -2,8 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 
+import TextInput from "../TextInput/TextInputComponent";
+import TextArea from "../TextArea/TextAreaComponent";
+
+
 const Container = styled.div`
-  margin-bottom: 2vw;
+  margin: 2vw 0;
 `;
 
 const Title = styled.div`
@@ -11,8 +15,15 @@ const Title = styled.div`
   font-weight: ${props => props.theme.defaults.fontWeight};
   text-transform: uppercase;
   color: ${props => props.theme.colors.grey};
-`
 
+  margin-bottom: 0.5em;
+`;
+
+
+const ResponseContainer = styled.div`
+  width: 90%;
+  height: auto;
+`;
 
 const Question = ({
   questionData
@@ -21,11 +32,11 @@ const Question = ({
   let QuestionInput;
   switch(questionData.type) {
     case 'text':
-      QuestionInput = <div>this is a text question</div>;
+      QuestionInput = <TextInput />;
       break;
 
     case 'longText':
-      QuestionInput = <div>this is a longText question</div>;
+      QuestionInput = <TextArea />;
       break;
 
     case 'select':
@@ -39,7 +50,9 @@ const Question = ({
   return (
     <Container>
       <Title>{questionData.label}</Title>
-      {QuestionInput}
+      <ResponseContainer>
+        {QuestionInput}
+      </ResponseContainer>
     </Container>
   );
 }

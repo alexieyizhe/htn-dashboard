@@ -56,18 +56,11 @@
     "react-test-renderer": "^16.8.2"
   },
   "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          "@babel/preset-env",
-          "@babel/preset-react"
-        ],
-        "plugins": [
-          "syntax-class-properties",
-          "transform-class-properties"
-        ]
-      }
-    }
+    "presets": ["babel-preset-gatsby"],
+    "plugins": [
+      "syntax-class-properties",
+      "transform-class-properties"
+    ]
   },
   "jest": {
     "transform": {
@@ -96,6 +89,8 @@
       "text",
       "html"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/.jest/setupTests.js"]
+    "setupFilesAfterEnv": [
+      "<rootDir>/.jest/setupTests.js"
+    ]
   }
 }

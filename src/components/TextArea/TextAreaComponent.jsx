@@ -2,13 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 
-const Container = styled.input`
-  padding: 1vw;
-  border: ${props => `2px solid ${props.outlineColor || props.theme.colors.grey}`};
-  border-radius: ${props => props.theme.defaults.borderRadius};
+const Container = styled.textarea`
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0.8em;
 
+  font-size: 100%;
   color: ${props => props.outlineColor || props.theme.defaults.black};
+
   transition: border 250ms ease-in-out;
+  border-radius: ${props => props.theme.defaults.borderRadius};
+  border: ${props => `2px solid ${props.outlineColor || props.theme.colors.grey}`};
 
   &:focus {
     outline: none;
@@ -17,7 +22,7 @@ const Container = styled.input`
 `;
 
 
-const TextInput = ({
+const TextArea = ({
   placeholder,
   outlineColor
 }) => (
@@ -28,4 +33,4 @@ const TextInput = ({
 );
 
 
-export default TextInput;
+export default TextArea;
