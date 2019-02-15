@@ -9,7 +9,10 @@ import {
   faDoorOpen,
   faQuestion,
   faCogs,
-  faCog
+  faCog,
+  faChevronUp,
+  faChevronDown,
+  faChevronCircleLeft
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -21,7 +24,10 @@ library.add(
   faDoorOpen,
   faQuestion,
   faCogs,
-  faCog
+  faCog,
+  faChevronUp,
+  faChevronDown,
+  faChevronCircleLeft
 );
 
 const siteTheme = {
@@ -38,6 +44,7 @@ const siteTheme = {
   },
   defaults: {
     borderRadius: '10px',
+    borderRadiusRound: '50px',
     fontWeight: '600'
   }
 }

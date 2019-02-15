@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly 1`] = `
+.c0 {
+  width: 60vw;
+  height: 10vw;
+  padding: 2vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: white;
+  background-color: #68B0E5;
+  border-radius: 10px;
+  cursor: pointer;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  -webkit-transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.c1 {
+  font-size: 1.5em;
+}
+
+<Card
+  siteTitle="Default Starter"
+>
+  <styled.div
+    completed={false}
+    onClick={[Function]}
+  >
+    <StyledComponent
+      completed={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  width: 60vw;
+  height: 10vw;
+  padding: 2vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  color: white;
+  background-color: ",
+              [Function],
+              ";
+
+  border-radius: ",
+              [Function],
+              ";
+  cursor: pointer;
+
+  will-change: transform;
+  transition: transform 250ms ease-in-out;
+  transform: scale(1.0);
+  &:hover {
+    transform: scale(1.02);
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+    >
+      <div
+        className="c0"
+        onClick={[Function]}
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-size: 1.5em;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              DEFAULT LABEL
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Card>
+`;

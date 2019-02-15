@@ -1,13 +1,18 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import Dashboard from "../views/Dashboard/DashboardViewContainer";
 import siteTheme, { GlobalStyles } from "../utils/siteStyles";
+import SiteContextProvider from "../utils/siteContext";
+
+import App from "../views/App";
+
 
 export default () => (
   <ThemeProvider theme={siteTheme}>
     <>
       <GlobalStyles />
-      <Dashboard />
+      <SiteContextProvider>
+        <App />
+      </SiteContextProvider>
     </>
   </ThemeProvider>
 
