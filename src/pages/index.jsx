@@ -1,11 +1,10 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Dashboard from "../views/Dashboard/DashboardViewContainer";
-import siteStyles from "../utils/siteStyles";
-import { GlobalStyles } from "../utils/siteTools";
+import siteTheme, { GlobalStyles } from "../utils/siteStyles";
 
 export default () => (
-  <ThemeProvider theme={siteStyles}>
+  <ThemeProvider theme={siteTheme}>
     <>
       <GlobalStyles />
       <Dashboard />

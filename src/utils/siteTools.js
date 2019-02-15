@@ -1,4 +1,4 @@
-import { css, createGlobalStyle } from "styled-components";
+import { css } from "styled-components";
 
 
 export const displaySizes = {
@@ -16,13 +16,3 @@ export const mediaSize = Object.keys(displaySizes).reduce((acc, label) => {
   `;
   return acc;
 }, {});
-
-
-export const GlobalStyles = createGlobalStyle`
-  html, body, * {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-  }
-`;

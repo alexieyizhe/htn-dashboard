@@ -1,4 +1,30 @@
-const siteStyles = {
+import { createGlobalStyle } from "styled-components";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faLightbulb,
+  faExclamation,
+  faTimes,
+  faCheck,
+  faDoorClosed,
+  faDoorOpen,
+  faQuestion,
+  faCogs,
+  faCog
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  faLightbulb,
+  faExclamation,
+  faTimes,
+  faCheck,
+  faDoorClosed,
+  faDoorOpen,
+  faQuestion,
+  faCogs,
+  faCog
+);
+
+const siteTheme = {
   colors: {
     black: '#4B4B4B',
     lightBlack: '#696969',
@@ -16,5 +42,16 @@ const siteStyles = {
   }
 }
 
+export const GlobalStyles = createGlobalStyle`
+  html, body, * {
+    margin: 0;
+    padding: 0;
 
-export default siteStyles;
+    box-sizing: border-box;
+
+    font-family: Rubik, Arial, sans-serif;
+  }
+`;
+
+
+export default siteTheme;

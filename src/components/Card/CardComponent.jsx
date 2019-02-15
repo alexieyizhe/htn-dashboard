@@ -8,7 +8,7 @@ import CheckmarkImg from "../../../static/checkmark.png";
 const CardContainer = styled.div`
   width: 60vw;
   height: 10vw;
-  padding: 3vw;
+  padding: 2vw;
 
   display: flex;
   flex-direction: row;
@@ -30,13 +30,13 @@ const CardContainer = styled.div`
 
 
 const CardLabel = styled.div`
-  font-size: 2em;
+  font-size: 1.5em;
 `;
 
 
 const CardCheckmark = styled.img`
-  max-height: 60%;
-  margin: auto 0; // centers img
+  max-height: 50%;
+  margin: auto 1vw; // centers img
 `;
 
 

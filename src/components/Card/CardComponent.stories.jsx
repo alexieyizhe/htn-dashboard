@@ -5,4 +5,6 @@ import Card from "./CardComponent";
 
 storiesOf("Card", module)
   .add("Default", () => <Card />)
-  .add("Completed", () => <Card completed />);
+  .add("With Label", () => <Card label="Some Label" />)
+  .add("Completed", () => <Card completed />)
+  .add("Completed With Label", () => <Card label="Some Other Label" completed />);
