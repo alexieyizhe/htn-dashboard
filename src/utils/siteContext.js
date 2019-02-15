@@ -112,6 +112,9 @@ const reducer = (state, action) => {
     case "goHome":
       return { ...state, curLocation: DASHBOARD_PAGE };
 
+    case "goToQuestionSet":
+      return { ...state, curLocation: action.newLoc };
+
     case "updateQuestion":
       return state;
 

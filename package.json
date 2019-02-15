@@ -8,7 +8,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "test": "???",
+    "lint": "eslint --ext .jsx,.js src/",
+    "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
@@ -31,6 +32,8 @@
   "devDependencies": {
     "@storybook/react": "^4.1.11",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "babel-preset-gatsby": "^0.1.7",
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",
@@ -39,6 +42,9 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
-    "prettier": "^1.16.4"
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "react-test-renderer": "^16.8.2"
   }
 }

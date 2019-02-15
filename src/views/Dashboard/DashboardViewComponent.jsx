@@ -17,13 +17,13 @@ const DashboardCard = styled(Card)`
 
 const DashboardView = () => {
   const { state, dispatch } = useContext(SiteContext);
-
+  const goToQuestionSet = name => dispatch({ type: 'goToQuestionSet', newLoc: name })
 
   return (
     <div>
       <Heading main>Application Sections</Heading>
       {state.questionSets.map(questionSet => (
-        <DashboardCard label={questionSet.label} />
+        <DashboardCard clickHandler={() => goToQuestionSet(questionSet.value)} label={questionSet.label} />
       ))}
     </div>
   );
