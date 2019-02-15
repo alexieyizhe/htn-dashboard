@@ -42,7 +42,7 @@ const QuestionSet = ({
       </BackButton>
       <Heading main>{questionSet.label}</Heading>
       {questionSet.questions.map(question => (
-        <Question questionData={question} />
+        <Question key={question.id} questionData={question} />
       ))}
     </Container>
   );

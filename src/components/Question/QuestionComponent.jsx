@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import TextInput from "../TextInput/TextInputComponent";
 import TextArea from "../TextArea/TextAreaComponent";
-
+import SelectDropdown from "../SelectDropdown/SelectDropdownComponent";
 
 const Container = styled.div`
   margin: 2vw 0;
@@ -32,15 +32,15 @@ const Question = ({
   let QuestionInput;
   switch(questionData.type) {
     case 'text':
-      QuestionInput = <TextInput />;
+      QuestionInput = <TextInput placeholder={questionData.placeholder} />;
       break;
 
     case 'longText':
-      QuestionInput = <TextArea />;
+      QuestionInput = <TextArea placeholder={questionData.placeholder} />;
       break;
 
     case 'select':
-      QuestionInput = <div>this is a select question</div>;
+      QuestionInput = <SelectDropdown options={questionData.options}>this is a select question</SelectDropdown>;
       break;
 
     default:

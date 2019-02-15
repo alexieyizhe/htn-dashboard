@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 
@@ -14,7 +14,7 @@ const Container = styled.input`
   border-radius: ${props => props.theme.defaults.borderRadius};
   border: ${props => `2px solid ${props.outlineColor || props.theme.colors.grey}`};
 
-  &:focus {
+  &.touched, &:focus {
     outline: none;
     border: ${props => `2px solid ${props.outlineColor || props.theme.colors.black}`};
   }
@@ -24,12 +24,20 @@ const Container = styled.input`
 const TextInput = ({
   placeholder,
   outlineColor
-}) => (
-  <Container
-    placeholder={placeholder}
-    outlineColor={outlineColor}
-  />
-);
+}) => {
+
+  const [value, updateValue] = useState('');
+
+  return (
+    <Container
+      className={value !== '' ? 'touched' : ''}
+      placeholder={placeholder}
+      outlineColor={outlineColor}
+      value={value}
+      onChange={(e) => updateValue(e.target.value)}
+    />
+  );
+};
 
 
 export default TextInput;

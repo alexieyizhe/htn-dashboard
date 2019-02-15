@@ -23,7 +23,7 @@ const DashboardView = () => {
     <div>
       <Heading main>Application Sections</Heading>
       {state.questionSets.map(questionSet => (
-        <DashboardCard clickHandler={() => goToQuestionSet(questionSet.value)} label={questionSet.label} />
+        <DashboardCard key={questionSet.id} clickHandler={() => goToQuestionSet(questionSet.id)} label={questionSet.label} />
       ))}
     </div>
   );
