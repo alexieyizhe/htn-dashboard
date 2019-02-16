@@ -34,3 +34,15 @@ export const STATE_KEYS = [
   "applicationSubmitted",
   "curLocation"
 ];
+
+export const getDashboardGreeting = () => {
+  let greeting = "Good morning";
+  const hourOfDay = parseFloat(new Date().getHours());
+  if (hourOfDay >= 12 && hourOfDay < 18) {
+    greeting = "Good afternoon";
+  } else if (hourOfDay >= 18) {
+    greeting = "Good evening";
+  }
+
+  return greeting;
+};

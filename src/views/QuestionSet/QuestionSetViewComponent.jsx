@@ -29,7 +29,7 @@ const BackButton = styled.span`
     width: 10%;
     position: fixed;
     top: auto;
-    bottom: 5vw;
+    bottom: 13vw;
     left: 50%;
     margin-left: -5%;
   `};

@@ -10,19 +10,19 @@ import Question from "../Question/QuestionComponent";
 
 const FormContainer = styled.div`
   ${mediaSize.tablet`
-    padding-bottom: 12vw;
+    padding-bottom: 20vw;
     width: 80vw;
   `};
 
   ${mediaSize.phone`
-    padding-bottom: 20vw;
+    padding-bottom: 25vw;
   `};
 `;
 
 
 const Alert = styled.span`
   padding-bottom: 2vw;
-  
+
   position: relative;
   color: ${props => props.allclear ? props.theme.colors.green : props.theme.colors.grey};
 
