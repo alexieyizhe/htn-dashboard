@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Container = styled.span`
   width: ${props => props.width};
   height: ${props => props.height};
-  padding: 3%;
+  padding: 2%;
 
   display: grid;
   grid-template-rows: auto;

@@ -8,7 +8,7 @@ const Container = styled.button`
   border-radius: ${props => props.theme.defaults.borderRadiusRound};
 
   color: white;
-  background-color: ${props => props.backgroundColor || props.theme.colors.lightBlack};
+  background-color: ${props => props.backgroundColor || (props.disabled ? props.theme.colors.grey : props.theme.colors.lightBlack)};
 
   &:focus {
     outline: none;
@@ -16,21 +16,25 @@ const Container = styled.button`
 
   transition: background-color 250ms ease-in-out;
   &:hover {
-    background-color: ${props => props.backgroundColor || props.theme.colors.black};
+    background-color: ${props => props.backgroundColor || (props.disabled ? props.theme.colors.grey : props.theme.colors.black)};
   }
 `;
 
 
 const Button = ({
+  className,
   label,
+  disabled,
   backgroundColor,
   type = "button",
-  onClickHandler = null,
+  onClickHandler = () => console.log(`clicked ${label} button`),
 }) => (
   <Container
+    className={className}
     type={type}
+    disabled={disabled}
     backgroundColor={backgroundColor}
-    onClick={onClickHandler !== null ? () => onClickHandler() : () => console.log(`clicked ${label} button`)}
+    onClick={disabled ? null : () => onClickHandler()}
   >
     {label}
   </Container>

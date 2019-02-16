@@ -8,7 +8,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "lint": "eslint --ext .jsx,.js src/",
+    "lint": "eslint --ext .jsx,.js src/ --fix",
     "test": "jest",
     "test:update": "jest --updateSnapshot",
     "storybook": "start-storybook -p 9001 -c .storybook"
@@ -17,6 +17,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "debounce": "^1.2.0",
     "gatsby": "^2.1.0",
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "^3.0.6",
@@ -56,18 +57,13 @@
     "react-test-renderer": "^16.8.2"
   },
   "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          "@babel/preset-env",
-          "@babel/preset-react"
-        ],
-        "plugins": [
-          "syntax-class-properties",
-          "transform-class-properties"
-        ]
-      }
-    }
+    "presets": [
+      "babel-preset-gatsby"
+    ],
+    "plugins": [
+      "syntax-class-properties",
+      "transform-class-properties"
+    ]
   },
   "jest": {
     "transform": {
@@ -96,6 +92,8 @@
       "text",
       "html"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/.jest/setupTests.js"]
+    "setupFilesAfterEnv": [
+      "<rootDir>/.jest/setupTests.js"
+    ]
   }
 }

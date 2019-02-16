@@ -18,9 +18,9 @@ const HeaderButton = styled.div`
 
   will-change: transform;
   transition: transform 250ms ease-in-out;
-  transform: scale(1.0);
+  transform: scale(0.75);
   &:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
   }
 `;
 

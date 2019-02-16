@@ -1,4 +1,4 @@
-#Hack the North's Super Awesome Hacker Application Site
+# Hack the North's Super Awesome Hacker Application Site
 
 This was created for Hack the North's Frontend Challenge for 2019 :D
 
