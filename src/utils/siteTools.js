@@ -23,3 +23,14 @@ export const SITE_QUESTION_TYPES = Object.freeze({
   LONGTEXT: 'longText',
   SELECT: 'select'
 })
+
+
+export const HTN_QUESTION_ENDPOINT = "https://hackthenorth.com/fe-questions.json";
+
+export const STATE_KEYS = [
+  "name",
+  "questionSets",
+  "applicationCompleted",
+  "applicationSubmitted",
+  "curLocation"
+];

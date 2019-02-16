@@ -2,7 +2,7 @@
 
 This was created for Hack the North's Frontend Challenge for 2019 :D
 
-Live at [the following link!](https://htn-frontend-alexxie.netlify.com/)
+Live at [the following link!](http://htn-application.ml/)
 
 
 ## 🤔 Product Vision and Design

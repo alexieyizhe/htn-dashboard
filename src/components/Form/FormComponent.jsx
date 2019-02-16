@@ -21,6 +21,8 @@ const FormContainer = styled.div`
 
 
 const Alert = styled.span`
+  padding-bottom: 2vw;
+  
   position: relative;
   color: ${props => props.allclear ? props.theme.colors.green : props.theme.colors.grey};
 
@@ -35,9 +37,7 @@ const Alert = styled.span`
 
 
 
-const Form = ({
-  id
-}) => {
+const Form = ({ id }) => {
 
   const [ questionSaveState, setQuestionSaveState ] = useState('ready');
   const { state, dispatch } = useContext(SiteContext);
