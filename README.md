@@ -8,7 +8,7 @@ Live at [the following link!](http://htn-application.ml/)
 ## 🤔 Product Vision and Design
 I tried to design with user experience in mind, so there are lots of quality of life improvements in the app like alerts that notify what the user still needs to do, microinteractions, live saving, etc.  
 
-Given additional time, some aspects of a fully fledged web app for hackers are already present. The help, settings, and log out buttons are very easily able to be functional. I would definitely implement an authentication system that hides the app under authenticated routes.
+Given additional time, some aspects of a fully fledged web app for hackers are already present. The help, settings, and log out buttons are very easily able to be made functional. I would definitely implement an authentication system that hides the app under authenticated routes.
 
 Almost none of the app is hard coded - instead, most of the data pulls from the global store (if this was a full web app, I would imagine the app would be querying a backend to get this information, and persisting it in the store temporarily). If extended to a full web app, features like the toast, or the greeting, can be customized to fit the user when they log in, when the app first loads, or even periodically as seen fit.
 
@@ -20,13 +20,17 @@ As always, I try to follow best principles when designing sites. No matter how l
 
 
 ## 🚀 Nifty Features  
-The site is built with React, Gatsby, styled-components, and has some neat features:
- - Snapshot tests with __Jest__ and __Enzyme__
- - Component development with __Storybook__
- - Linting with __eslint__ and __prettier__
- - Global state with new __React Context store/reducers__
+The site is built with React, Gatsby, styled-components, and some Gatsby plugins. I chose Gatsby to utilize the SSR of static assets/components and the rich plugin support. I learned a lot about how to write an interactive dynamic web app in Gatsby, which is often said to be only for static sites.
+
+It has a couple of neat extras:
+ - Persistent state and responses with __localStorage__
+ - __Offline support__ with service worker
+ - Global state with __React Context store/reducers__ (not messing with Redux for a smaller project lol)
  - Completely functional component design with new __React Hooks API__
- - Offline support
+ - Snapshot testing with __Jest__ and __Enzyme__
+ - Individual component development with __Storybook__
+ - Continous integration with a Github Actions workflow
+ - Linting with __eslint__ and __prettier__
  - and more!
 
 

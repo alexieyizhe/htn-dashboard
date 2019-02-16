@@ -1,8 +1,8 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import styled from "styled-components";
 import "isomorphic-fetch"; // eslint-disable-line
 import { SiteContext } from "../utils/siteContext";
-import { mediaSize, HTN_QUESTION_ENDPOINT, STATE_KEYS } from "../utils/siteTools";
+import { mediaSize, getDashboardGreeting, HTN_QUESTION_ENDPOINT, STATE_KEYS } from "../utils/siteTools";
 
 import DashboardView from "./Dashboard/DashboardViewContainer";
 import QuestionSetView from "./QuestionSet/QuestionSetViewComponent";
@@ -14,26 +14,17 @@ import Toast from "../components/Toaster/ToastComponent";
 import Heading from "../components/Heading/HeadingComponent";
 
 
-const getDashboardGreeting = () => {
-  let greeting = "Good morning";
-  const hourOfDay = parseFloat(new Date().getHours());
-  if (hourOfDay >= 12 && hourOfDay < 18) {
-    greeting = "Good afternoon";
-  } else if (hourOfDay >= 18) {
-    greeting = "Good evening";
-  }
-
-  return greeting;
-};
 
 
 const Container = styled.div`
   width: 100vw;
-  height: auto;
+  height: 100vh;
   padding: 5vh 10vw;
 
   display: flex;
   flex-direction: row;
+
+  position: relative;
 
   ${mediaSize.tablet`
     flex-direction: column;
@@ -144,13 +135,18 @@ const App = () => {
 
   const { state, dispatch } = useContext(SiteContext);
   const isOnDashboard = (state.curLocation === 'dashboard');
-  const numUnfinishedSets = state.questionSets.filter(qs => qs && !qs.completed).length;
+  const numUnfinishedSets = state.questionSets && state.questionSets.filter(qs => qs && !qs.completed).length;
+  const stateRef = useRef();
+  stateRef.current = state;
 
   const fetchQuestionSetData = () => {
     fetch(HTN_QUESTION_ENDPOINT) // eslint-disable-line
      .then(response => response.json())
      .then(questionSetData => {
-       localStorage.setItem('lastAPICall', JSON.stringify(Date.now()));
+       // ideally, you would store a hash or some unique identifier of the question sets
+       // so that if the question set ever changes, the user has to fill out the new
+       // application question set instead of being able to keep the old one
+       localStorage.setItem('lastAPICallIdentifier', 'SOME_UNIQUE_HASH');
        dispatch({ type: "getAPIData", data: questionSetData });
      })
      .catch(e => {
@@ -160,18 +156,27 @@ const App = () => {
 
   const loadStateFromAPIorStorage = () => {
     STATE_KEYS.forEach(key => {
-      if(localStorage.hasOwnProperty(key) && key !== "questionSet") { // eslint-disable-line
+      // here's where you would compare the identifier in localStorage with
+      // a newer identifier so that you can determine whether a newer
+      // version of the application question set exists
+      // const identifierMatches = (key !== 'questionSets' || false);
+      // eslint-disable-next-line
+      const shouldLoadFromStorage = localStorage.hasOwnProperty(key) // && identifierMatches
+
+      if(shouldLoadFromStorage) {
         let valueInStorage = localStorage.getItem(key);
          try {
            valueInStorage = JSON.parse(valueInStorage);
-           console.log(valueInStorage)
+           if(key === 'questionSets' && valueInStorage.length < 1) fetchQuestionSetData();
+
            dispatch({ type: "hydrateStorage", data: { key, value: valueInStorage } });
 
          } catch (e) {
            // usually an invalid parse (possibly empty string)
            console.log(e);
          }
-       } else if(key === "questionSet") {
+       } else if(key === 'questionSets') {
+         // questionSets wasn't found locally (probably new user), fetch data
          fetchQuestionSetData();
        }
     })
@@ -179,14 +184,13 @@ const App = () => {
 
   const saveStateToStorage = () => {
     STATE_KEYS.forEach(key => {
-      localStorage.setItem(key, JSON.stringify(state[key]));
+      localStorage.setItem(key, JSON.stringify(stateRef.current[key]));
     })
   }
 
-  
+
   useEffect(() => {
     loadStateFromAPIorStorage();
-    fetchQuestionSetData();
     window.addEventListener('beforeunload', () => saveStateToStorage());
 
     return () => {
@@ -210,7 +214,7 @@ const App = () => {
         </Greeting>
         <ToastContainer>
           <DashboardToast>
-            You have <span>{numUnfinishedSets}</span> sections left in your application.
+            You have <span>{numUnfinishedSets}</span> section(s) left in your application.
           </DashboardToast>
         </ToastContainer>
       </LeftColumn>

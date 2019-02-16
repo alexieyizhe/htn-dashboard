@@ -2,14 +2,18 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import SelectDropdown from "./SelectDropdownComponent";
 
-const sampleOptions = [
-  { value: 'lasagna', label: 'Lasagna' },
-  { value: 'pizza', label: 'Pizza' },
-  { value: 'sushi', label: 'Sushi' },
-  { value: 'coffee', label: 'Coffee' },
-
-]
+const sampleQuestionDataDropdown = {
+  id: 'favFood',
+  label: 'What is your favourite food?',
+  placeholder: 'Pizza...',
+  options: [
+    {label: 'Pizza', value: 'pizza'},
+    {label: 'Sushi', value: 'sushi'},
+    {label: 'Tacos', value: 'tacos'},
+  ],
+  type: 'select'
+}
 
 storiesOf("SelectDropdown", module)
-  .add("Default", () => <SelectDropdown optionsArray={sampleOptions} />)
-  .add("Custom Outline", () => <SelectDropdown outlineColor="rgb(146, 160, 241)" optionsArray={sampleOptions} />);
+  .add("Default", () => <SelectDropdown options={sampleQuestionDataDropdown.options} />)
+  .add("Custom Outline", () => <SelectDropdown outlineColor="rgb(146, 160, 241)" options={sampleQuestionDataDropdown.options} />);

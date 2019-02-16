@@ -58,6 +58,10 @@ export const GlobalStyles = createGlobalStyle`
 
     font-family: Rubik, Arial, sans-serif;
   }
+
+  html, body {
+    overflow-x: hidden;
+  }
 `;
 
 
