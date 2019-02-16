@@ -18,11 +18,13 @@ import Heading from "../components/Heading/HeadingComponent";
 
 const Container = styled.div`
   width: 100vw;
-  height: auto;
+  height: 100vh;
   padding: 5vh 10vw;
 
   display: flex;
   flex-direction: row;
+
+  position: relative;
 
   ${mediaSize.tablet`
     flex-direction: column;
