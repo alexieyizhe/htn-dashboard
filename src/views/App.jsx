@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import { SiteContext } from "../utils/siteContext";
 
@@ -116,7 +116,7 @@ const App = () => {
         <Greeting>
           <Heading noMargin>{getDashboardGreeting()},</Heading>
           <div className="userName">
-            Michal.
+            {state.name}.
           </div>
           <Heading>Good to see you again!</Heading>
         </Greeting>

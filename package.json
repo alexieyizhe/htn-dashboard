@@ -8,7 +8,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "lint": "eslint --ext .jsx,.js src/",
+    "lint": "eslint --ext .jsx,.js src/ --fix",
     "test": "jest",
     "test:update": "jest --updateSnapshot",
     "storybook": "start-storybook -p 9001 -c .storybook"

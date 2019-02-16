@@ -6,8 +6,6 @@ import { SiteContext } from "../../utils/siteContext";
 import Heading from "../Heading/HeadingComponent";
 import Question from "../Question/QuestionComponent";
 
-const Container = styled.div`
-`;
 
 const Alert = styled.span`
   position: relative;

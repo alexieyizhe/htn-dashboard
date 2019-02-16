@@ -148,6 +148,7 @@ const defaultLocation = DASHBOARD_PAGE;
 
 
 const initialState = {
+  name: 'Michal',
   questionSets: addStateToQuestionSets(defaultQuestionSets),
   applicationCompleted: false,
   applicationSubmitted: false,
