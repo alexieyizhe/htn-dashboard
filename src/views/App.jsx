@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
-import "isomorphic-fetch";
+import "isomorphic-fetch"; // eslint-disable-line
 import { SiteContext } from "../utils/siteContext";
 import { mediaSize, HTN_QUESTION_ENDPOINT, STATE_KEYS } from "../utils/siteTools";
 
@@ -147,7 +147,7 @@ const App = () => {
   const numUnfinishedSets = state.questionSets.filter(qs => qs && !qs.completed).length;
 
   const fetchQuestionSetData = () => {
-    fetch(HTN_QUESTION_ENDPOINT)
+    fetch(HTN_QUESTION_ENDPOINT) // eslint-disable-line
      .then(response => response.json())
      .then(questionSetData => {
        localStorage.setItem('lastAPICall', JSON.stringify(Date.now()));
@@ -160,7 +160,7 @@ const App = () => {
 
   const loadStateFromAPIorStorage = () => {
     STATE_KEYS.forEach(key => {
-      if(localStorage.hasOwnProperty(key) && key !== "questionSet") {
+      if(localStorage.hasOwnProperty(key) && key !== "questionSet") { // eslint-disable-line
         let valueInStorage = localStorage.getItem(key);
          try {
            valueInStorage = JSON.parse(valueInStorage);
