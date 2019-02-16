@@ -49,6 +49,7 @@ const DashboardView = ({
       submitAppHandler();
     } else {
       updateStatus({ msg: "Make sure to fill out the entire application!", color: theme.colors.error });
+      setTimeout(() => updateStatus({ msg: '', color: '#363636' }), 1500);
     }
   }
 

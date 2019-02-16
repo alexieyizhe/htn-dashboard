@@ -12,6 +12,19 @@ import Toast from "../components/Toaster/ToastComponent";
 import Heading from "../components/Heading/HeadingComponent";
 
 
+const getDashboardGreeting = () => {
+  let greeting = "Good morning";
+  const hourOfDay = parseFloat(new Date().getHours());
+  if (hourOfDay >= 12 && hourOfDay < 18) {
+    greeting = "Good afternoon";
+  } else if (hourOfDay >= 18) {
+    greeting = "Good evening";
+  }
+
+  return greeting;
+};
+
+
 const Container = styled.div`
   width: 100vw;
   height: auto;
@@ -52,9 +65,9 @@ const ColumnPane = styled.div`
 
   position: absolute;
   will-change: translateX, opacity;
-  transition: transform 500ms ease-in-out, opacity 200ms ease-in-out;
+  transition: transform 500ms ease-in-out, opacity 300ms ease-in-out;
   opacity: ${props => props.show ? 1 : 0};
-  transform: ${props => props.show ? 'translateX(0)' : `translateX(${props.hide === 'left' ? '-100vw' : '100vw'})`};
+  transform: ${props => props.show ? 'translateX(0)' : `translateX(${props.hide === 'left' ? '-20vw' : '20vw'})`};
 `;
 
 
@@ -89,12 +102,10 @@ const DashboardToast = styled(Toast)`
 `;
 
 
-
 const App = () => {
 
   const { state } = useContext(SiteContext);
   const isOnDashboard = (state.curLocation === 'dashboard');
-
   const numUnfinishedSets = state.questionSets.filter(qs => qs && !qs.completed).length;
 
   return (
@@ -103,7 +114,7 @@ const App = () => {
       <LeftColumn>
         <Header/>
         <Greeting>
-          <Heading noMargin>Good morning,</Heading>
+          <Heading noMargin>{getDashboardGreeting()},</Heading>
           <div className="userName">
             Michal.
           </div>
