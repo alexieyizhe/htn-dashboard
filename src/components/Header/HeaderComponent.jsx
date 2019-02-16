@@ -8,6 +8,8 @@ import LogoImg from "../../../static/favicon.jpg";
 
 const Container = styled.span`
   width: auto;
+  position: sticky;
+  top: 5vh;
   height: 10vh;
 
   display: flex;
@@ -16,6 +18,11 @@ const Container = styled.span`
 
   color: ${props => props.theme.colors.black};
   background-color: white;
+
+  ${mediaSize.tablet`
+    position: relative;
+    top: auto;
+  `};
 `;
 
 

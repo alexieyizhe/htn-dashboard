@@ -47,12 +47,14 @@ const LeftColumn = styled.div`
 
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   ${mediaSize.tablet`
     position: relative;
     height: auto;
     width: 80vw;
+    justify-content: space-between;
+
   `};
 `;
 
@@ -77,7 +79,7 @@ const ColumnContents = styled.div`
 
 
 const ColumnPane = styled.div`
-  padding-top: 3vw;
+  padding-top: 5vh;
 
   position: absolute;
   will-change: translateX, opacity;
@@ -99,7 +101,9 @@ const NavButtons = styled.div`
 
 
 const Greeting = styled.div`
-  padding-top: 3vw;
+  position: sticky;
+  top: 15vh;
+  padding-top: 5vh;
   height: 60vh;
 
   & .userName {
@@ -114,6 +118,9 @@ const Greeting = styled.div`
 
 
 const ToastContainer = styled.div`
+  position: fixed;
+  bottom: 5vh;
+  width: 40vw;
   height: 20vh;
 
   ${mediaSize.tablet`
