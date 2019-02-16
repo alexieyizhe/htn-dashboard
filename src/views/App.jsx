@@ -158,14 +158,14 @@ const App = () => {
      });
   }
 
-  const loadStateFromAPIorStorage = (curDispatch) => {
+  const loadStateFromAPIorStorage = () => {
     STATE_KEYS.forEach(key => {
       if(localStorage.hasOwnProperty(key) && key !== "questionSet") { // eslint-disable-line
         let valueInStorage = localStorage.getItem(key);
          try {
            valueInStorage = JSON.parse(valueInStorage);
            console.log(valueInStorage)
-           curDispatch({ type: "hydrateStorage", data: { key, value: valueInStorage } });
+           dispatch({ type: "hydrateStorage", data: { key, value: valueInStorage } });
 
          } catch (e) {
            // usually an invalid parse (possibly empty string)
@@ -177,25 +177,24 @@ const App = () => {
     })
   }
 
-  const saveStateToStorage = (curState) => {
+  const saveStateToStorage = () => {
     STATE_KEYS.forEach(key => {
-      localStorage.setItem(key, JSON.stringify(curState[key]));
+      localStorage.setItem(key, JSON.stringify(state[key]));
     })
   }
 
-
+  
   useEffect(() => {
-    loadStateFromAPIorStorage(dispatch);
+    loadStateFromAPIorStorage();
     fetchQuestionSetData();
-    window.addEventListener('beforeunload', () => saveStateToStorage(state));
+    window.addEventListener('beforeunload', () => saveStateToStorage());
 
     return () => {
-      window.removeEventListener('beforeunload', () => saveStateToStorage(state));
+      window.removeEventListener('beforeunload', () => saveStateToStorage());
 
-      saveStateToStorage(state);
+      saveStateToStorage();
     }
-  },
-  []);
+  }, []);
 
   return (
     <Container>
