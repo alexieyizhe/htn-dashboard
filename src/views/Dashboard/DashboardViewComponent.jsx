@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import styled, { withTheme } from "styled-components";
 import { SiteContext } from "../../utils/siteContext";
+import { mediaSize } from "../../utils/siteTools";
 
 import Heading from "../../components/Heading/HeadingComponent";
 import Card from "../../components/Card/CardComponent";
@@ -12,6 +13,17 @@ const DashboardCard = styled(Card)`
   width: 40vw;
   height: 10vw;
   margin: 0 0 2vw auto;
+
+  ${mediaSize.tablet`
+    width: 80vw;
+    height: 15vw;
+    margin: 4vw 0 4vw auto;
+  `};
+
+  ${mediaSize.phone`
+    padding: 5vw;
+    height: 25vw;
+  `};
 `;
 
 const SubmitActionContainer = styled.div`
@@ -28,6 +40,11 @@ const SubmitButton = styled(Button)`
 
 const SubmitMsg = styled.span`
   color: ${props => props.color};
+
+  ${mediaSize.phone`
+    margin-top: 3vw;
+    display: block;
+  `};
 `;
 
 

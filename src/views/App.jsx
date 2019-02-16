@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { SiteContext } from "../utils/siteContext";
+import { mediaSize } from "../utils/siteTools";
 
 import DashboardView from "./Dashboard/DashboardViewContainer";
 import QuestionSetView from "./QuestionSet/QuestionSetViewComponent";
@@ -32,6 +33,10 @@ const Container = styled.div`
 
   display: flex;
   flex-direction: row;
+
+  ${mediaSize.tablet`
+    flex-direction: column;
+  `};
 `;
 
 const LeftColumn = styled.div`
@@ -43,15 +48,26 @@ const LeftColumn = styled.div`
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
+
+  ${mediaSize.tablet`
+    position: relative;
+    height: auto;
+    width: 80vw;
+  `};
 `;
 
 const RightColumn = styled.div`
-  position: relative;
   width: 45vw;
 
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  ${mediaSize.tablet`
+    margin-top: 5vh;
+    height: auto;
+    width: 80vw;
+  `};
 `;
 
 
@@ -73,6 +89,12 @@ const ColumnPane = styled.div`
 
 const NavButtons = styled.div`
   height: 10vh;
+
+  ${mediaSize.tablet`
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+  `};
 `;
 
 
@@ -84,16 +106,24 @@ const Greeting = styled.div`
     font-size: 4em;
     color: ${props => props.theme.colors.black};
   }
+
+  ${mediaSize.tablet`
+    height: auto;
+  `};
 `;
 
 
 const ToastContainer = styled.div`
   height: 20vh;
+
+  ${mediaSize.tablet`
+    display: none;
+  `};
 `;
 
 
 const DashboardToast = styled(Toast)`
-  width: 60%;
+  width: 65%;
   height: 70%;
 
   & span {

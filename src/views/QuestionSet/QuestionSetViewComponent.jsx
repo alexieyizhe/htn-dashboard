@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiteContext } from "../../utils/siteContext";
+import { mediaSize } from "../../utils/siteTools";
 
 import Form from "../../components/Form/FormComponent";
 
@@ -23,6 +24,15 @@ const BackButton = styled.span`
   &:hover {
     transform: scale(1.1);
   }
+
+  ${mediaSize.tablet`
+    width: 10%;
+    position: fixed;
+    top: auto;
+    bottom: 5vw;
+    left: 50%;
+    margin-left: -5%;
+  `};
 `;
 
 

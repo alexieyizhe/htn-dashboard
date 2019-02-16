@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SITE_QUESTION_TYPES } from "../../utils/siteTools";
+import { SITE_QUESTION_TYPES, mediaSize } from "../../utils/siteTools";
 
 import TextInput from "../TextInput/TextInputComponent";
 import TextArea from "../TextArea/TextAreaComponent";
@@ -8,6 +8,10 @@ import SelectDropdown from "../SelectDropdown/SelectDropdownComponent";
 
 const Container = styled.div`
   margin: 2vw 0;
+
+  ${mediaSize.phone`
+    margin: 5vw 0;
+  `};
 `;
 
 const Title = styled.div`

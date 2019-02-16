@@ -2,9 +2,22 @@ import React, { useContext, useState, useCallback } from "react";
 import styled from "styled-components";
 import { debounce } from "debounce";
 import { SiteContext } from "../../utils/siteContext";
+import { mediaSize } from "../../utils/siteTools";
 
 import Heading from "../Heading/HeadingComponent";
 import Question from "../Question/QuestionComponent";
+
+
+const FormContainer = styled.div`
+  ${mediaSize.tablet`
+    padding-bottom: 12vw;
+    width: 80vw;
+  `};
+
+  ${mediaSize.phone`
+    padding-bottom: 20vw;
+  `};
+`;
 
 
 const Alert = styled.span`
@@ -36,7 +49,7 @@ const Form = ({
       dispatch({ type: 'updateApplication', data: { setId: id, questionId, questionResponse } });
       setQuestionSaveState('saved');
     }, 1000),
-    []
+    [id]
   );
 
   const saveResponse = (questionId, questionResponse) => {
@@ -44,12 +57,8 @@ const Form = ({
     delayedDispatchResponse(questionId, questionResponse)
   };
 
-
-  console.log('after', questionSaveState)
-
-
   return (
-    <div className="FormContainer">
+    <FormContainer>
       <Heading main>{questionSetInState && questionSetInState.label}</Heading>
       {questionSetInState && questionSetInState.questions.map(question => (
         <Question key={question.id} questionData={question} responseUpdater={saveResponse} />
@@ -74,7 +83,7 @@ const Form = ({
       >
         Nice! This section has been completed.
       </Alert>
-    </div>
+    </FormContainer>
   );
 }
 

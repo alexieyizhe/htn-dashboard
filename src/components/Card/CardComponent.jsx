@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mediaSize } from "../../utils/siteTools";
 
 /* Images */
 import CheckmarkImg from "../../../static/checkmark.png";
