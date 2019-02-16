@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiteContext } from "../../utils/siteContext";
 
-import Heading from "../../components/Heading/HeadingComponent";
-import Question from "../../components/Question/QuestionComponent";
+import Form from "../../components/Form/FormComponent";
 
 const Container = styled.div`
   position: relative;
@@ -28,11 +27,10 @@ const BackButton = styled.span`
 
 
 const QuestionSet = ({
-  className,
-  questionSet,
+  qsId,
 }) => {
 
-  const { state, dispatch } = useContext(SiteContext);
+  const { dispatch } = useContext(SiteContext);
   const goHome = () => dispatch({ type: 'goHome' });
 
   return (
@@ -40,10 +38,9 @@ const QuestionSet = ({
       <BackButton onClick={() => goHome()}>
         <FontAwesomeIcon icon="chevron-circle-left" size="2x" />
       </BackButton>
-      <Heading main>{questionSet.label}</Heading>
-      {questionSet.questions.map(question => (
-        <Question key={question.id} questionData={question} />
-      ))}
+
+      <Form id={qsId} />
+
     </Container>
   );
 };

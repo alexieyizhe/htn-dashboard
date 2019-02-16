@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { SiteContext } from "../utils/siteContext";
 
@@ -33,11 +33,28 @@ const LeftColumn = styled.div`
 `;
 
 const RightColumn = styled.div`
+  position: relative;
   width: 45vw;
 
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
+`;
+
+
+const ColumnContents = styled.div`
+  position: relative;
+`;
+
+
+const ColumnPane = styled.div`
+  padding-top: 3vw;
+
+  position: absolute;
+  will-change: translateX, opacity;
+  transition: transform 500ms ease-in-out, opacity 200ms ease-in-out;
+  opacity: ${props => props.show ? 1 : 0};
+  transform: ${props => props.show ? 'translateX(0)' : `translateX(${props.hide === 'left' ? '-100vw' : '100vw'})`};
 `;
 
 
@@ -47,19 +64,13 @@ const NavButtons = styled.div`
 
 
 const Greeting = styled.div`
+  padding-top: 3vw;
   height: 60vh;
-
 
   & .userName {
     font-size: 4em;
     color: ${props => props.theme.colors.black};
   }
-
-  & span {
-    font-weight: 600;
-    color: ${props => props.theme.colors.black};
-  }
-
 `;
 
 
@@ -69,15 +80,22 @@ const ToastContainer = styled.div`
 
 
 const DashboardToast = styled(Toast)`
-  width: 55%;
-  height: 75%;
+  width: 60%;
+  height: 70%;
+
+  & span {
+    font-weight: 600;
+  }
 `;
 
 
 
 const App = () => {
 
-  const { state, dispatch } = useContext(SiteContext);
+  const { state } = useContext(SiteContext);
+  const isOnDashboard = (state.curLocation === 'dashboard');
+
+  const numUnfinishedSets = state.questionSets.filter(qs => qs && !qs.completed).length;
 
   return (
     <Container>
@@ -87,22 +105,24 @@ const App = () => {
         <Greeting>
           <Heading noMargin>Good morning,</Heading>
           <div className="userName">
-            Bob.
+            Michal.
           </div>
           <Heading>Good to see you again!</Heading>
         </Greeting>
         <ToastContainer>
           <DashboardToast>
-            You have <span>four</span> sections left in your application.
+            You have <span>{numUnfinishedSets}</span> sections left in your application.
           </DashboardToast>
         </ToastContainer>
       </LeftColumn>
 
       <RightColumn>
         <NavButtons><HeaderButtons /></NavButtons>
-        {state.curLocation === 'dashboard'
-          ? <DashboardView />
-          : <QuestionSetView questionSet={state.questionSets[0]} />}
+        <ColumnContents style={{position: 'relative'}}>
+          <ColumnPane show={isOnDashboard} hide="left" stack><DashboardView /></ColumnPane>
+          <ColumnPane show={!isOnDashboard} hide="right" stack><QuestionSetView qsId={state.curLocation}/></ColumnPane>
+        </ColumnContents>
+
       </RightColumn>
 
     </Container>

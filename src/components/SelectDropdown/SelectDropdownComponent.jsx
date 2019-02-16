@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Select from 'react-select';
 
-const Container = styled.div`
-`;
 
 const SelectDrop = styled(Select)`
   width: 100%;
@@ -38,15 +36,23 @@ const SelectDrop = styled(Select)`
 
 
 const SelectDropdown = ({
+  id,
+  defaultValue,
   placeholder = 'Select an option...',
   options,
   disabled,
   allowMultiple,
-  outlineColor
+  outlineColor,
+  responseUpdater
 }) => {
 
+  const [value, updateValue] = useState(defaultValue);
   const [isFocused, toggleFocus] = useState(false);
-  const [isFilled, setFilled] = useState(false);
+  const [isFilled, setFilled] = useState(defaultValue !== '');
+
+  useEffect(() => {
+    if(defaultValue !== value) responseUpdater(id, value);
+  });
 
   return (
     <SelectDrop
@@ -57,9 +63,10 @@ const SelectDropdown = ({
       isDisabled={disabled}
       placeholder={placeholder}
       options={options}
+      defaultValue={defaultValue && {value: defaultValue, label: options.find(o => o.value === defaultValue).label}}
       onBlur={() => toggleFocus(false)}
       onFocus={() => toggleFocus(true)}
-      onChange={() => setFilled(true)}
+      onChange={(option) => {setFilled(true); updateValue(option.value)}}
     />
   );
 }

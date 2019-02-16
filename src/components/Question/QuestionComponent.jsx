@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { SITE_QUESTION_TYPES } from "../../utils/siteTools";
 
 import TextInput from "../TextInput/TextInputComponent";
 import TextArea from "../TextArea/TextAreaComponent";
@@ -21,26 +21,27 @@ const Title = styled.div`
 
 
 const ResponseContainer = styled.div`
-  width: 90%;
+  width: 95%;
   height: auto;
 `;
 
 const Question = ({
-  questionData
+  questionData,
+  responseUpdater
 }) => {
 
   let QuestionInput;
   switch(questionData.type) {
-    case 'text':
-      QuestionInput = <TextInput placeholder={questionData.placeholder} />;
+    case SITE_QUESTION_TYPES.TEXT:
+      QuestionInput = <TextInput placeholder={questionData.placeholder} id={questionData.id} defaultValue={questionData.curValue} responseUpdater={responseUpdater} />;
       break;
 
-    case 'longText':
-      QuestionInput = <TextArea placeholder={questionData.placeholder} />;
+    case SITE_QUESTION_TYPES.LONGTEXT:
+      QuestionInput = <TextArea placeholder={questionData.placeholder} id={questionData.id} defaultValue={questionData.curValue} responseUpdater={responseUpdater} />;
       break;
 
-    case 'select':
-      QuestionInput = <SelectDropdown options={questionData.options}>this is a select question</SelectDropdown>;
+    case SITE_QUESTION_TYPES.SELECT:
+      QuestionInput = <SelectDropdown options={questionData.options} id={questionData.id} defaultValue={questionData.curValue} responseUpdater={responseUpdater} />;
       break;
 
     default:

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 
@@ -22,18 +22,25 @@ const Container = styled.input`
 
 
 const TextInput = ({
+  id,
+  defaultValue,
   placeholder,
-  outlineColor
+  outlineColor,
+  responseUpdater
 }) => {
 
-  const [value, updateValue] = useState('');
+  const [value, updateValue] = useState(defaultValue);
+
+  useEffect(() => {
+    if(defaultValue !== value) responseUpdater(id, value);
+  });
 
   return (
     <Container
       className={value !== '' ? 'touched' : ''}
       placeholder={placeholder}
       outlineColor={outlineColor}
-      value={value}
+      defaultValue={defaultValue}
       onChange={(e) => updateValue(e.target.value)}
     />
   );

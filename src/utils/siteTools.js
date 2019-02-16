@@ -16,3 +16,10 @@ export const mediaSize = Object.keys(displaySizes).reduce((acc, label) => {
   `;
   return acc;
 }, {});
+
+
+export const SITE_QUESTION_TYPES = Object.freeze({
+  TEXT: 'text',
+  LONGTEXT: 'longText',
+  SELECT: 'select'
+})
