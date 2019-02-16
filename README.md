@@ -26,7 +26,8 @@ The site is built with React, Gatsby, styled-components, and has some neat featu
  - Linting with __eslint__ and __prettier__
  - Global state with new __React Context store/reducers__
  - Completely functional component design with new __React Hooks API__
-
+ - Offline support
+ - and more!
 
 
 _Created by Alex Xie, 2019._
