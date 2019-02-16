@@ -6,12 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Container = styled.span`
   width: ${props => props.width};
   height: ${props => props.height};
-  padding: 2%;
+  padding: 2% 0;
 
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 25% 70%;
-  grid-column-gap: 5%;
+  grid-template-columns: 25% 75%;
+  grid-column-gap: 3%;
   grid-template-areas: "icon contents";
   justify-content: space-between;
 
@@ -33,6 +33,8 @@ const ToastIcon = styled.div`
 
 const ToastContents = styled.div`
   grid-area: contents;
+
+  font-size: 1em;
 `;
 
 
