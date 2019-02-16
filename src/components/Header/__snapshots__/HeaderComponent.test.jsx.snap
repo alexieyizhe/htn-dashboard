@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+.c0 {
+  width: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5vh;
+  height: 10vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #4B4B4B;
+  background-color: white;
+}
+
+.c2 {
+  font-size: 1.75em;
+  margin: auto auto auto 0.5em;
+}
+
+.c1 {
+  max-height: 3em;
+  margin: auto 0;
+}
+
+@media (max-width:64em) {
+  .c0 {
+    position: relative;
+    top: auto;
+  }
+}
+
+@media (max-width:37.5em) {
+  .c2 {
+    display: none;
+  }
+}
+
+<Header>
+  <styled.span>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  width: auto;
+  position: sticky;
+  top: 5vh;
+  height: 10vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  color: ",
+              [Function],
+              ";
+  background-color: white;
+
+  ",
+              "
+    @media (max-width: ",
+              "64",
+              "em) {
+      ",
+              "
+    position: relative;
+    top: auto;
+  ",
+              "
+    }
+  ",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <span
+        className="c0"
+      >
+        <styled.img
+          alt="Hack the North logo"
+          src={Object {}}
+        >
+          <StyledComponent
+            alt="Hack the North logo"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  max-height: 3em;
+  margin: auto 0; // centers img
+",
+                  ],
+                },
+                "displayName": "styled.img",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "img",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            src={Object {}}
+          >
+            <img
+              alt="Hack the North logo"
+              className="c1"
+              src={Object {}}
+            />
+          </StyledComponent>
+        </styled.img>
+        <styled.span>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  font-size: 1.75em;
+  margin: auto auto auto 0.5em;
+
+  ",
+                    "
+    @media (max-width: ",
+                    "37.5",
+                    "em) {
+      ",
+                    "
+    display: none;
+  ",
+                    "
+    }
+  ",
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c2"
+            >
+              Hack the North
+            </span>
+          </StyledComponent>
+        </styled.span>
+      </span>
+    </StyledComponent>
+  </styled.span>
+</Header>
+`;

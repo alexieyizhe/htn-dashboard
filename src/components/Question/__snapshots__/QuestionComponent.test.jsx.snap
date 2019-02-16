@@ -1,0 +1,2098 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders correctly as longtextInput 1`] = `
+.c3 {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0.8em;
+  font-size: 100%;
+  -webkit-transition: border 250ms ease-in-out;
+  transition: border 250ms ease-in-out;
+  border-radius: 10px;
+  border: 2px solid #AAAAAA;
+}
+
+.c3.touched,
+.c3:focus {
+  outline: none;
+  border: 2px solid #4B4B4B;
+}
+
+.c0 {
+  margin: 2vw 0;
+}
+
+.c1 {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #AAAAAA;
+  margin-bottom: 0.5em;
+}
+
+.c2 {
+  width: 95%;
+  height: auto;
+}
+
+@media (max-width:37.5em) {
+  .c0 {
+    margin: 5vw 0;
+  }
+}
+
+<Question
+  questionData={
+    Object {
+      "id": "favFood",
+      "label": "Why is that your favourite food?",
+      "placeholder": "Because yum",
+      "type": "longText",
+    }
+  }
+  responseUpdater={[Function]}
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  margin: 2vw 0;
+
+  ",
+              "
+    @media (max-width: ",
+              "37.5",
+              "em) {
+      ",
+              "
+    margin: 5vw 0;
+  ",
+              "
+    }
+  ",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-size: 1em;
+  font-weight: ",
+                    [Function],
+                    ";
+  text-transform: uppercase;
+  color: ",
+                    [Function],
+                    ";
+
+  margin-bottom: 0.5em;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              Why is that your favourite food?
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-EHOje",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  width: 95%;
+  height: auto;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-EHOje",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            >
+              <TextArea
+                id="favFood"
+                placeholder="Because yum"
+                responseUpdater={[Function]}
+              >
+                <styled.textarea
+                  className="touched"
+                  onChange={[Function]}
+                  placeholder="Because yum"
+                >
+                  <StyledComponent
+                    className="touched"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0.8em;
+
+  font-size: 100%;
+  color: ",
+                            [Function],
+                            ";
+
+  transition: border 250ms ease-in-out;
+  border-radius: ",
+                            [Function],
+                            ";
+  border: ",
+                            [Function],
+                            ";
+
+  &.touched, &:focus {
+    outline: none;
+    border: ",
+                            [Function],
+                            ";
+  }
+",
+                          ],
+                        },
+                        "displayName": "styled.textarea",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": "textarea",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onChange={[Function]}
+                    placeholder="Because yum"
+                  >
+                    <textarea
+                      className="touched c3"
+                      onChange={[Function]}
+                      placeholder="Because yum"
+                    />
+                  </StyledComponent>
+                </styled.textarea>
+              </TextArea>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Question>
+`;
+
+exports[`Heading renders correctly as select 1`] = `
+.c3 {
+  width: 100%;
+  height: 100%;
+  padding: 0.2em;
+  font-size: 100%;
+  -webkit-transition: border 250ms ease-in-out;
+  transition: border 250ms ease-in-out;
+  border-radius: 10px;
+  border: 2px solid #AAAAAA;
+}
+
+.c3.touched {
+  outline: none;
+  border: 2px solid #4B4B4B;
+}
+
+.c3 .react-select__control,
+.c3 .select__control--is-focused {
+  border: none;
+  box-shadow: none;
+}
+
+.c3 .react-select__menu {
+  margin-top: 0.2em;
+}
+
+.c3 .react-select__menu .react-select__option {
+  cursor: pointer;
+}
+
+.c0 {
+  margin: 2vw 0;
+}
+
+.c1 {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #AAAAAA;
+  margin-bottom: 0.5em;
+}
+
+.c2 {
+  width: 95%;
+  height: auto;
+}
+
+@media (max-width:37.5em) {
+  .c0 {
+    margin: 5vw 0;
+  }
+}
+
+<Question
+  questionData={
+    Object {
+      "id": "favFood",
+      "label": "What is your favourite food?",
+      "options": Array [
+        Object {
+          "label": "Pizza",
+          "value": "pizza",
+        },
+        Object {
+          "label": "Sushi",
+          "value": "sushi",
+        },
+        Object {
+          "label": "Tacos",
+          "value": "tacos",
+        },
+      ],
+      "placeholder": "Pizza...",
+      "type": "select",
+    }
+  }
+  responseUpdater={[Function]}
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  margin: 2vw 0;
+
+  ",
+              "
+    @media (max-width: ",
+              "37.5",
+              "em) {
+      ",
+              "
+    margin: 5vw 0;
+  ",
+              "
+    }
+  ",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-size: 1em;
+  font-weight: ",
+                    [Function],
+                    ";
+  text-transform: uppercase;
+  color: ",
+                    [Function],
+                    ";
+
+  margin-bottom: 0.5em;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              What is your favourite food?
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-EHOje",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  width: 95%;
+  height: auto;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-EHOje",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            >
+              <SelectDropdown
+                id="favFood"
+                options={
+                  Array [
+                    Object {
+                      "label": "Pizza",
+                      "value": "pizza",
+                    },
+                    Object {
+                      "label": "Sushi",
+                      "value": "sushi",
+                    },
+                    Object {
+                      "label": "Tacos",
+                      "value": "tacos",
+                    },
+                  ]
+                }
+                responseUpdater={[Function]}
+              >
+                <Styled(StateManager)
+                  className="react-select-container touched"
+                  classNamePrefix="react-select"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  options={
+                    Array [
+                      Object {
+                        "label": "Pizza",
+                        "value": "pizza",
+                      },
+                      Object {
+                        "label": "Sushi",
+                        "value": "sushi",
+                      },
+                      Object {
+                        "label": "Tacos",
+                        "value": "tacos",
+                      },
+                    ]
+                  }
+                  placeholder="Select an option..."
+                >
+                  <StyledComponent
+                    className="react-select-container touched"
+                    classNamePrefix="react-select"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htpNat",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  width: 100%;
+  height: 100%;
+  padding: 0.2em;
+
+  font-size: 100%;
+  color: ",
+                            [Function],
+                            ";
+
+  transition: border 250ms ease-in-out;
+  border-radius: ",
+                            [Function],
+                            ";
+  border: ",
+                            [Function],
+                            ";
+
+  &.touched {
+    outline: none;
+    border: ",
+                            [Function],
+                            ";
+  }
+
+  & .react-select__control, & .select__control--is-focused {
+    border: none;
+    box-shadow: none;
+  }
+
+  & .react-select__menu {
+    margin-top: 0.2em;
+
+    & .react-select__option {
+      cursor: pointer;
+    }
+  }
+",
+                          ],
+                        },
+                        "displayName": "Styled(StateManager)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htpNat",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Pizza",
+                          "value": "pizza",
+                        },
+                        Object {
+                          "label": "Sushi",
+                          "value": "sushi",
+                        },
+                        Object {
+                          "label": "Tacos",
+                          "value": "tacos",
+                        },
+                      ]
+                    }
+                    placeholder="Select an option..."
+                  >
+                    <StateManager
+                      className="react-select-container touched c3"
+                      classNamePrefix="react-select"
+                      defaultInputValue=""
+                      defaultMenuIsOpen={false}
+                      defaultValue={null}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      options={
+                        Array [
+                          Object {
+                            "label": "Pizza",
+                            "value": "pizza",
+                          },
+                          Object {
+                            "label": "Sushi",
+                            "value": "sushi",
+                          },
+                          Object {
+                            "label": "Tacos",
+                            "value": "tacos",
+                          },
+                        ]
+                      }
+                      placeholder="Select an option..."
+                    >
+                      <Select
+                        backspaceRemovesValue={true}
+                        blurInputOnSelect={true}
+                        captureMenuScroll={false}
+                        className="react-select-container touched c3"
+                        classNamePrefix="react-select"
+                        closeMenuOnScroll={false}
+                        closeMenuOnSelect={true}
+                        components={Object {}}
+                        controlShouldRenderValue={true}
+                        defaultInputValue=""
+                        defaultMenuIsOpen={false}
+                        defaultValue={null}
+                        escapeClearsValue={false}
+                        filterOption={[Function]}
+                        formatGroupLabel={[Function]}
+                        getOptionLabel={[Function]}
+                        getOptionValue={[Function]}
+                        inputValue=""
+                        isDisabled={false}
+                        isLoading={false}
+                        isMulti={false}
+                        isOptionDisabled={[Function]}
+                        isRtl={false}
+                        isSearchable={true}
+                        loadingMessage={[Function]}
+                        maxMenuHeight={300}
+                        menuIsOpen={false}
+                        menuPlacement="bottom"
+                        menuPosition="absolute"
+                        menuShouldBlockScroll={false}
+                        menuShouldScrollIntoView={true}
+                        minMenuHeight={140}
+                        noOptionsMessage={[Function]}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onInputChange={[Function]}
+                        onMenuClose={[Function]}
+                        onMenuOpen={[Function]}
+                        openMenuOnClick={true}
+                        openMenuOnFocus={false}
+                        options={
+                          Array [
+                            Object {
+                              "label": "Pizza",
+                              "value": "pizza",
+                            },
+                            Object {
+                              "label": "Sushi",
+                              "value": "sushi",
+                            },
+                            Object {
+                              "label": "Tacos",
+                              "value": "tacos",
+                            },
+                          ]
+                        }
+                        pageSize={5}
+                        placeholder="Select an option..."
+                        screenReaderStatus={[Function]}
+                        styles={Object {}}
+                        tabIndex="0"
+                        tabSelectsValue={true}
+                        value={null}
+                      >
+                        <SelectContainer
+                          className="react-select-container touched c3"
+                          clearValue={[Function]}
+                          cx={[Function]}
+                          getStyles={[Function]}
+                          getValue={[Function]}
+                          hasValue={false}
+                          innerProps={
+                            Object {
+                              "id": undefined,
+                              "onKeyDown": [Function],
+                            }
+                          }
+                          isDisabled={false}
+                          isFocused={false}
+                          isMulti={false}
+                          isRtl={false}
+                          options={
+                            Array [
+                              Object {
+                                "label": "Pizza",
+                                "value": "pizza",
+                              },
+                              Object {
+                                "label": "Sushi",
+                                "value": "sushi",
+                              },
+                              Object {
+                                "label": "Tacos",
+                                "value": "tacos",
+                              },
+                            ]
+                          }
+                          selectOption={[Function]}
+                          selectProps={
+                            Object {
+                              "backspaceRemovesValue": true,
+                              "blurInputOnSelect": true,
+                              "captureMenuScroll": false,
+                              "className": "react-select-container touched sc-htpNat c3",
+                              "classNamePrefix": "react-select",
+                              "closeMenuOnScroll": false,
+                              "closeMenuOnSelect": true,
+                              "components": Object {},
+                              "controlShouldRenderValue": true,
+                              "defaultInputValue": "",
+                              "defaultMenuIsOpen": false,
+                              "defaultValue": null,
+                              "escapeClearsValue": false,
+                              "filterOption": [Function],
+                              "formatGroupLabel": [Function],
+                              "getOptionLabel": [Function],
+                              "getOptionValue": [Function],
+                              "inputValue": "",
+                              "isDisabled": false,
+                              "isLoading": false,
+                              "isMulti": false,
+                              "isOptionDisabled": [Function],
+                              "isRtl": false,
+                              "isSearchable": true,
+                              "loadingMessage": [Function],
+                              "maxMenuHeight": 300,
+                              "menuIsOpen": false,
+                              "menuPlacement": "bottom",
+                              "menuPosition": "absolute",
+                              "menuShouldBlockScroll": false,
+                              "menuShouldScrollIntoView": true,
+                              "minMenuHeight": 140,
+                              "noOptionsMessage": [Function],
+                              "onBlur": [Function],
+                              "onChange": [Function],
+                              "onFocus": [Function],
+                              "onInputChange": [Function],
+                              "onMenuClose": [Function],
+                              "onMenuOpen": [Function],
+                              "openMenuOnClick": true,
+                              "openMenuOnFocus": false,
+                              "options": Array [
+                                Object {
+                                  "label": "Pizza",
+                                  "value": "pizza",
+                                },
+                                Object {
+                                  "label": "Sushi",
+                                  "value": "sushi",
+                                },
+                                Object {
+                                  "label": "Tacos",
+                                  "value": "tacos",
+                                },
+                              ],
+                              "outlineColor": undefined,
+                              "pageSize": 5,
+                              "placeholder": "Select an option...",
+                              "screenReaderStatus": [Function],
+                              "styles": Object {},
+                              "tabIndex": "0",
+                              "tabSelectsValue": true,
+                              "value": null,
+                            }
+                          }
+                          setValue={[Function]}
+                          theme={
+                            Object {
+                              "borderRadius": 4,
+                              "colors": Object {
+                                "danger": "#DE350B",
+                                "dangerLight": "#FFBDAD",
+                                "neutral0": "hsl(0, 0%, 100%)",
+                                "neutral10": "hsl(0, 0%, 90%)",
+                                "neutral20": "hsl(0, 0%, 80%)",
+                                "neutral30": "hsl(0, 0%, 70%)",
+                                "neutral40": "hsl(0, 0%, 60%)",
+                                "neutral5": "hsl(0, 0%, 95%)",
+                                "neutral50": "hsl(0, 0%, 50%)",
+                                "neutral60": "hsl(0, 0%, 40%)",
+                                "neutral70": "hsl(0, 0%, 30%)",
+                                "neutral80": "hsl(0, 0%, 20%)",
+                                "neutral90": "hsl(0, 0%, 10%)",
+                                "primary": "#2684FF",
+                                "primary25": "#DEEBFF",
+                                "primary50": "#B2D4FF",
+                                "primary75": "#4C9AFF",
+                              },
+                              "spacing": Object {
+                                "baseUnit": 4,
+                                "controlHeight": 38,
+                                "menuGutter": 8,
+                              },
+                            }
+                          }
+                        >
+                          <div
+                            className="css-10nd86i react-select-container touched c3"
+                            onKeyDown={[Function]}
+                          >
+                            <Control
+                              clearValue={[Function]}
+                              cx={[Function]}
+                              getStyles={[Function]}
+                              getValue={[Function]}
+                              hasValue={false}
+                              innerProps={
+                                Object {
+                                  "onMouseDown": [Function],
+                                  "onTouchEnd": [Function],
+                                }
+                              }
+                              innerRef={[Function]}
+                              isDisabled={false}
+                              isFocused={false}
+                              isMulti={false}
+                              isRtl={false}
+                              menuIsOpen={false}
+                              options={
+                                Array [
+                                  Object {
+                                    "label": "Pizza",
+                                    "value": "pizza",
+                                  },
+                                  Object {
+                                    "label": "Sushi",
+                                    "value": "sushi",
+                                  },
+                                  Object {
+                                    "label": "Tacos",
+                                    "value": "tacos",
+                                  },
+                                ]
+                              }
+                              selectOption={[Function]}
+                              selectProps={
+                                Object {
+                                  "backspaceRemovesValue": true,
+                                  "blurInputOnSelect": true,
+                                  "captureMenuScroll": false,
+                                  "className": "react-select-container touched sc-htpNat c3",
+                                  "classNamePrefix": "react-select",
+                                  "closeMenuOnScroll": false,
+                                  "closeMenuOnSelect": true,
+                                  "components": Object {},
+                                  "controlShouldRenderValue": true,
+                                  "defaultInputValue": "",
+                                  "defaultMenuIsOpen": false,
+                                  "defaultValue": null,
+                                  "escapeClearsValue": false,
+                                  "filterOption": [Function],
+                                  "formatGroupLabel": [Function],
+                                  "getOptionLabel": [Function],
+                                  "getOptionValue": [Function],
+                                  "inputValue": "",
+                                  "isDisabled": false,
+                                  "isLoading": false,
+                                  "isMulti": false,
+                                  "isOptionDisabled": [Function],
+                                  "isRtl": false,
+                                  "isSearchable": true,
+                                  "loadingMessage": [Function],
+                                  "maxMenuHeight": 300,
+                                  "menuIsOpen": false,
+                                  "menuPlacement": "bottom",
+                                  "menuPosition": "absolute",
+                                  "menuShouldBlockScroll": false,
+                                  "menuShouldScrollIntoView": true,
+                                  "minMenuHeight": 140,
+                                  "noOptionsMessage": [Function],
+                                  "onBlur": [Function],
+                                  "onChange": [Function],
+                                  "onFocus": [Function],
+                                  "onInputChange": [Function],
+                                  "onMenuClose": [Function],
+                                  "onMenuOpen": [Function],
+                                  "openMenuOnClick": true,
+                                  "openMenuOnFocus": false,
+                                  "options": Array [
+                                    Object {
+                                      "label": "Pizza",
+                                      "value": "pizza",
+                                    },
+                                    Object {
+                                      "label": "Sushi",
+                                      "value": "sushi",
+                                    },
+                                    Object {
+                                      "label": "Tacos",
+                                      "value": "tacos",
+                                    },
+                                  ],
+                                  "outlineColor": undefined,
+                                  "pageSize": 5,
+                                  "placeholder": "Select an option...",
+                                  "screenReaderStatus": [Function],
+                                  "styles": Object {},
+                                  "tabIndex": "0",
+                                  "tabSelectsValue": true,
+                                  "value": null,
+                                }
+                              }
+                              setValue={[Function]}
+                              theme={
+                                Object {
+                                  "borderRadius": 4,
+                                  "colors": Object {
+                                    "danger": "#DE350B",
+                                    "dangerLight": "#FFBDAD",
+                                    "neutral0": "hsl(0, 0%, 100%)",
+                                    "neutral10": "hsl(0, 0%, 90%)",
+                                    "neutral20": "hsl(0, 0%, 80%)",
+                                    "neutral30": "hsl(0, 0%, 70%)",
+                                    "neutral40": "hsl(0, 0%, 60%)",
+                                    "neutral5": "hsl(0, 0%, 95%)",
+                                    "neutral50": "hsl(0, 0%, 50%)",
+                                    "neutral60": "hsl(0, 0%, 40%)",
+                                    "neutral70": "hsl(0, 0%, 30%)",
+                                    "neutral80": "hsl(0, 0%, 20%)",
+                                    "neutral90": "hsl(0, 0%, 10%)",
+                                    "primary": "#2684FF",
+                                    "primary25": "#DEEBFF",
+                                    "primary50": "#B2D4FF",
+                                    "primary75": "#4C9AFF",
+                                  },
+                                  "spacing": Object {
+                                    "baseUnit": 4,
+                                    "controlHeight": 38,
+                                    "menuGutter": 8,
+                                  },
+                                }
+                              }
+                            >
+                              <div
+                                className="css-vj8t7z react-select__control"
+                                onMouseDown={[Function]}
+                                onTouchEnd={[Function]}
+                              >
+                                <ValueContainer
+                                  clearValue={[Function]}
+                                  cx={[Function]}
+                                  getStyles={[Function]}
+                                  getValue={[Function]}
+                                  hasValue={false}
+                                  isDisabled={false}
+                                  isMulti={false}
+                                  isRtl={false}
+                                  options={
+                                    Array [
+                                      Object {
+                                        "label": "Pizza",
+                                        "value": "pizza",
+                                      },
+                                      Object {
+                                        "label": "Sushi",
+                                        "value": "sushi",
+                                      },
+                                      Object {
+                                        "label": "Tacos",
+                                        "value": "tacos",
+                                      },
+                                    ]
+                                  }
+                                  selectOption={[Function]}
+                                  selectProps={
+                                    Object {
+                                      "backspaceRemovesValue": true,
+                                      "blurInputOnSelect": true,
+                                      "captureMenuScroll": false,
+                                      "className": "react-select-container touched sc-htpNat c3",
+                                      "classNamePrefix": "react-select",
+                                      "closeMenuOnScroll": false,
+                                      "closeMenuOnSelect": true,
+                                      "components": Object {},
+                                      "controlShouldRenderValue": true,
+                                      "defaultInputValue": "",
+                                      "defaultMenuIsOpen": false,
+                                      "defaultValue": null,
+                                      "escapeClearsValue": false,
+                                      "filterOption": [Function],
+                                      "formatGroupLabel": [Function],
+                                      "getOptionLabel": [Function],
+                                      "getOptionValue": [Function],
+                                      "inputValue": "",
+                                      "isDisabled": false,
+                                      "isLoading": false,
+                                      "isMulti": false,
+                                      "isOptionDisabled": [Function],
+                                      "isRtl": false,
+                                      "isSearchable": true,
+                                      "loadingMessage": [Function],
+                                      "maxMenuHeight": 300,
+                                      "menuIsOpen": false,
+                                      "menuPlacement": "bottom",
+                                      "menuPosition": "absolute",
+                                      "menuShouldBlockScroll": false,
+                                      "menuShouldScrollIntoView": true,
+                                      "minMenuHeight": 140,
+                                      "noOptionsMessage": [Function],
+                                      "onBlur": [Function],
+                                      "onChange": [Function],
+                                      "onFocus": [Function],
+                                      "onInputChange": [Function],
+                                      "onMenuClose": [Function],
+                                      "onMenuOpen": [Function],
+                                      "openMenuOnClick": true,
+                                      "openMenuOnFocus": false,
+                                      "options": Array [
+                                        Object {
+                                          "label": "Pizza",
+                                          "value": "pizza",
+                                        },
+                                        Object {
+                                          "label": "Sushi",
+                                          "value": "sushi",
+                                        },
+                                        Object {
+                                          "label": "Tacos",
+                                          "value": "tacos",
+                                        },
+                                      ],
+                                      "outlineColor": undefined,
+                                      "pageSize": 5,
+                                      "placeholder": "Select an option...",
+                                      "screenReaderStatus": [Function],
+                                      "styles": Object {},
+                                      "tabIndex": "0",
+                                      "tabSelectsValue": true,
+                                      "value": null,
+                                    }
+                                  }
+                                  setValue={[Function]}
+                                  theme={
+                                    Object {
+                                      "borderRadius": 4,
+                                      "colors": Object {
+                                        "danger": "#DE350B",
+                                        "dangerLight": "#FFBDAD",
+                                        "neutral0": "hsl(0, 0%, 100%)",
+                                        "neutral10": "hsl(0, 0%, 90%)",
+                                        "neutral20": "hsl(0, 0%, 80%)",
+                                        "neutral30": "hsl(0, 0%, 70%)",
+                                        "neutral40": "hsl(0, 0%, 60%)",
+                                        "neutral5": "hsl(0, 0%, 95%)",
+                                        "neutral50": "hsl(0, 0%, 50%)",
+                                        "neutral60": "hsl(0, 0%, 40%)",
+                                        "neutral70": "hsl(0, 0%, 30%)",
+                                        "neutral80": "hsl(0, 0%, 20%)",
+                                        "neutral90": "hsl(0, 0%, 10%)",
+                                        "primary": "#2684FF",
+                                        "primary25": "#DEEBFF",
+                                        "primary50": "#B2D4FF",
+                                        "primary75": "#4C9AFF",
+                                      },
+                                      "spacing": Object {
+                                        "baseUnit": 4,
+                                        "controlHeight": 38,
+                                        "menuGutter": 8,
+                                      },
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="css-1hwfws3 react-select__value-container"
+                                  >
+                                    <Placeholder
+                                      clearValue={[Function]}
+                                      cx={[Function]}
+                                      getStyles={[Function]}
+                                      getValue={[Function]}
+                                      hasValue={false}
+                                      isDisabled={false}
+                                      isFocused={false}
+                                      isMulti={false}
+                                      isRtl={false}
+                                      key="placeholder"
+                                      options={
+                                        Array [
+                                          Object {
+                                            "label": "Pizza",
+                                            "value": "pizza",
+                                          },
+                                          Object {
+                                            "label": "Sushi",
+                                            "value": "sushi",
+                                          },
+                                          Object {
+                                            "label": "Tacos",
+                                            "value": "tacos",
+                                          },
+                                        ]
+                                      }
+                                      selectOption={[Function]}
+                                      selectProps={
+                                        Object {
+                                          "backspaceRemovesValue": true,
+                                          "blurInputOnSelect": true,
+                                          "captureMenuScroll": false,
+                                          "className": "react-select-container touched sc-htpNat c3",
+                                          "classNamePrefix": "react-select",
+                                          "closeMenuOnScroll": false,
+                                          "closeMenuOnSelect": true,
+                                          "components": Object {},
+                                          "controlShouldRenderValue": true,
+                                          "defaultInputValue": "",
+                                          "defaultMenuIsOpen": false,
+                                          "defaultValue": null,
+                                          "escapeClearsValue": false,
+                                          "filterOption": [Function],
+                                          "formatGroupLabel": [Function],
+                                          "getOptionLabel": [Function],
+                                          "getOptionValue": [Function],
+                                          "inputValue": "",
+                                          "isDisabled": false,
+                                          "isLoading": false,
+                                          "isMulti": false,
+                                          "isOptionDisabled": [Function],
+                                          "isRtl": false,
+                                          "isSearchable": true,
+                                          "loadingMessage": [Function],
+                                          "maxMenuHeight": 300,
+                                          "menuIsOpen": false,
+                                          "menuPlacement": "bottom",
+                                          "menuPosition": "absolute",
+                                          "menuShouldBlockScroll": false,
+                                          "menuShouldScrollIntoView": true,
+                                          "minMenuHeight": 140,
+                                          "noOptionsMessage": [Function],
+                                          "onBlur": [Function],
+                                          "onChange": [Function],
+                                          "onFocus": [Function],
+                                          "onInputChange": [Function],
+                                          "onMenuClose": [Function],
+                                          "onMenuOpen": [Function],
+                                          "openMenuOnClick": true,
+                                          "openMenuOnFocus": false,
+                                          "options": Array [
+                                            Object {
+                                              "label": "Pizza",
+                                              "value": "pizza",
+                                            },
+                                            Object {
+                                              "label": "Sushi",
+                                              "value": "sushi",
+                                            },
+                                            Object {
+                                              "label": "Tacos",
+                                              "value": "tacos",
+                                            },
+                                          ],
+                                          "outlineColor": undefined,
+                                          "pageSize": 5,
+                                          "placeholder": "Select an option...",
+                                          "screenReaderStatus": [Function],
+                                          "styles": Object {},
+                                          "tabIndex": "0",
+                                          "tabSelectsValue": true,
+                                          "value": null,
+                                        }
+                                      }
+                                      setValue={[Function]}
+                                      theme={
+                                        Object {
+                                          "borderRadius": 4,
+                                          "colors": Object {
+                                            "danger": "#DE350B",
+                                            "dangerLight": "#FFBDAD",
+                                            "neutral0": "hsl(0, 0%, 100%)",
+                                            "neutral10": "hsl(0, 0%, 90%)",
+                                            "neutral20": "hsl(0, 0%, 80%)",
+                                            "neutral30": "hsl(0, 0%, 70%)",
+                                            "neutral40": "hsl(0, 0%, 60%)",
+                                            "neutral5": "hsl(0, 0%, 95%)",
+                                            "neutral50": "hsl(0, 0%, 50%)",
+                                            "neutral60": "hsl(0, 0%, 40%)",
+                                            "neutral70": "hsl(0, 0%, 30%)",
+                                            "neutral80": "hsl(0, 0%, 20%)",
+                                            "neutral90": "hsl(0, 0%, 10%)",
+                                            "primary": "#2684FF",
+                                            "primary25": "#DEEBFF",
+                                            "primary50": "#B2D4FF",
+                                            "primary75": "#4C9AFF",
+                                          },
+                                          "spacing": Object {
+                                            "baseUnit": 4,
+                                            "controlHeight": 38,
+                                            "menuGutter": 8,
+                                          },
+                                        }
+                                      }
+                                    >
+                                      <div
+                                        className="css-1492t68 react-select__placeholder"
+                                      >
+                                        Select an option...
+                                      </div>
+                                    </Placeholder>
+                                    <Input
+                                      aria-autocomplete="list"
+                                      autoCapitalize="none"
+                                      autoComplete="off"
+                                      autoCorrect="off"
+                                      cx={[Function]}
+                                      getStyles={[Function]}
+                                      id="react-select-2-input"
+                                      innerRef={[Function]}
+                                      isDisabled={false}
+                                      isHidden={false}
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onFocus={[Function]}
+                                      selectProps={
+                                        Object {
+                                          "backspaceRemovesValue": true,
+                                          "blurInputOnSelect": true,
+                                          "captureMenuScroll": false,
+                                          "className": "react-select-container touched sc-htpNat c3",
+                                          "classNamePrefix": "react-select",
+                                          "closeMenuOnScroll": false,
+                                          "closeMenuOnSelect": true,
+                                          "components": Object {},
+                                          "controlShouldRenderValue": true,
+                                          "defaultInputValue": "",
+                                          "defaultMenuIsOpen": false,
+                                          "defaultValue": null,
+                                          "escapeClearsValue": false,
+                                          "filterOption": [Function],
+                                          "formatGroupLabel": [Function],
+                                          "getOptionLabel": [Function],
+                                          "getOptionValue": [Function],
+                                          "inputValue": "",
+                                          "isDisabled": false,
+                                          "isLoading": false,
+                                          "isMulti": false,
+                                          "isOptionDisabled": [Function],
+                                          "isRtl": false,
+                                          "isSearchable": true,
+                                          "loadingMessage": [Function],
+                                          "maxMenuHeight": 300,
+                                          "menuIsOpen": false,
+                                          "menuPlacement": "bottom",
+                                          "menuPosition": "absolute",
+                                          "menuShouldBlockScroll": false,
+                                          "menuShouldScrollIntoView": true,
+                                          "minMenuHeight": 140,
+                                          "noOptionsMessage": [Function],
+                                          "onBlur": [Function],
+                                          "onChange": [Function],
+                                          "onFocus": [Function],
+                                          "onInputChange": [Function],
+                                          "onMenuClose": [Function],
+                                          "onMenuOpen": [Function],
+                                          "openMenuOnClick": true,
+                                          "openMenuOnFocus": false,
+                                          "options": Array [
+                                            Object {
+                                              "label": "Pizza",
+                                              "value": "pizza",
+                                            },
+                                            Object {
+                                              "label": "Sushi",
+                                              "value": "sushi",
+                                            },
+                                            Object {
+                                              "label": "Tacos",
+                                              "value": "tacos",
+                                            },
+                                          ],
+                                          "outlineColor": undefined,
+                                          "pageSize": 5,
+                                          "placeholder": "Select an option...",
+                                          "screenReaderStatus": [Function],
+                                          "styles": Object {},
+                                          "tabIndex": "0",
+                                          "tabSelectsValue": true,
+                                          "value": null,
+                                        }
+                                      }
+                                      spellCheck="false"
+                                      tabIndex="0"
+                                      theme={
+                                        Object {
+                                          "borderRadius": 4,
+                                          "colors": Object {
+                                            "danger": "#DE350B",
+                                            "dangerLight": "#FFBDAD",
+                                            "neutral0": "hsl(0, 0%, 100%)",
+                                            "neutral10": "hsl(0, 0%, 90%)",
+                                            "neutral20": "hsl(0, 0%, 80%)",
+                                            "neutral30": "hsl(0, 0%, 70%)",
+                                            "neutral40": "hsl(0, 0%, 60%)",
+                                            "neutral5": "hsl(0, 0%, 95%)",
+                                            "neutral50": "hsl(0, 0%, 50%)",
+                                            "neutral60": "hsl(0, 0%, 40%)",
+                                            "neutral70": "hsl(0, 0%, 30%)",
+                                            "neutral80": "hsl(0, 0%, 20%)",
+                                            "neutral90": "hsl(0, 0%, 10%)",
+                                            "primary": "#2684FF",
+                                            "primary25": "#DEEBFF",
+                                            "primary50": "#B2D4FF",
+                                            "primary75": "#4C9AFF",
+                                          },
+                                          "spacing": Object {
+                                            "baseUnit": 4,
+                                            "controlHeight": 38,
+                                            "menuGutter": 8,
+                                          },
+                                        }
+                                      }
+                                      type="text"
+                                      value=""
+                                    >
+                                      <div
+                                        className="css-1g6gooi"
+                                      >
+                                        <AutosizeInput
+                                          aria-autocomplete="list"
+                                          autoCapitalize="none"
+                                          autoComplete="off"
+                                          autoCorrect="off"
+                                          className="react-select__input"
+                                          disabled={false}
+                                          id="react-select-2-input"
+                                          injectStyles={true}
+                                          inputRef={[Function]}
+                                          inputStyle={
+                                            Object {
+                                              "background": 0,
+                                              "border": 0,
+                                              "color": "inherit",
+                                              "fontSize": "inherit",
+                                              "opacity": 1,
+                                              "outline": 0,
+                                              "padding": 0,
+                                            }
+                                          }
+                                          minWidth={1}
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          spellCheck="false"
+                                          tabIndex="0"
+                                          type="text"
+                                          value=""
+                                        >
+                                          <div
+                                            className="react-select__input"
+                                            style={
+                                              Object {
+                                                "display": "inline-block",
+                                              }
+                                            }
+                                          >
+                                            <input
+                                              aria-autocomplete="list"
+                                              autoCapitalize="none"
+                                              autoComplete="off"
+                                              autoCorrect="off"
+                                              disabled={false}
+                                              id="react-select-2-input"
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              spellCheck="false"
+                                              style={
+                                                Object {
+                                                  "background": 0,
+                                                  "border": 0,
+                                                  "boxSizing": "content-box",
+                                                  "color": "inherit",
+                                                  "fontSize": "inherit",
+                                                  "opacity": 1,
+                                                  "outline": 0,
+                                                  "padding": 0,
+                                                  "width": "2px",
+                                                }
+                                              }
+                                              tabIndex="0"
+                                              type="text"
+                                              value=""
+                                            />
+                                            <div
+                                              style={
+                                                Object {
+                                                  "height": 0,
+                                                  "left": 0,
+                                                  "overflow": "scroll",
+                                                  "position": "absolute",
+                                                  "top": 0,
+                                                  "visibility": "hidden",
+                                                  "whiteSpace": "pre",
+                                                }
+                                              }
+                                            />
+                                          </div>
+                                        </AutosizeInput>
+                                      </div>
+                                    </Input>
+                                  </div>
+                                </ValueContainer>
+                                <IndicatorsContainer
+                                  clearValue={[Function]}
+                                  cx={[Function]}
+                                  getStyles={[Function]}
+                                  getValue={[Function]}
+                                  hasValue={false}
+                                  isDisabled={false}
+                                  isMulti={false}
+                                  isRtl={false}
+                                  options={
+                                    Array [
+                                      Object {
+                                        "label": "Pizza",
+                                        "value": "pizza",
+                                      },
+                                      Object {
+                                        "label": "Sushi",
+                                        "value": "sushi",
+                                      },
+                                      Object {
+                                        "label": "Tacos",
+                                        "value": "tacos",
+                                      },
+                                    ]
+                                  }
+                                  selectOption={[Function]}
+                                  selectProps={
+                                    Object {
+                                      "backspaceRemovesValue": true,
+                                      "blurInputOnSelect": true,
+                                      "captureMenuScroll": false,
+                                      "className": "react-select-container touched sc-htpNat c3",
+                                      "classNamePrefix": "react-select",
+                                      "closeMenuOnScroll": false,
+                                      "closeMenuOnSelect": true,
+                                      "components": Object {},
+                                      "controlShouldRenderValue": true,
+                                      "defaultInputValue": "",
+                                      "defaultMenuIsOpen": false,
+                                      "defaultValue": null,
+                                      "escapeClearsValue": false,
+                                      "filterOption": [Function],
+                                      "formatGroupLabel": [Function],
+                                      "getOptionLabel": [Function],
+                                      "getOptionValue": [Function],
+                                      "inputValue": "",
+                                      "isDisabled": false,
+                                      "isLoading": false,
+                                      "isMulti": false,
+                                      "isOptionDisabled": [Function],
+                                      "isRtl": false,
+                                      "isSearchable": true,
+                                      "loadingMessage": [Function],
+                                      "maxMenuHeight": 300,
+                                      "menuIsOpen": false,
+                                      "menuPlacement": "bottom",
+                                      "menuPosition": "absolute",
+                                      "menuShouldBlockScroll": false,
+                                      "menuShouldScrollIntoView": true,
+                                      "minMenuHeight": 140,
+                                      "noOptionsMessage": [Function],
+                                      "onBlur": [Function],
+                                      "onChange": [Function],
+                                      "onFocus": [Function],
+                                      "onInputChange": [Function],
+                                      "onMenuClose": [Function],
+                                      "onMenuOpen": [Function],
+                                      "openMenuOnClick": true,
+                                      "openMenuOnFocus": false,
+                                      "options": Array [
+                                        Object {
+                                          "label": "Pizza",
+                                          "value": "pizza",
+                                        },
+                                        Object {
+                                          "label": "Sushi",
+                                          "value": "sushi",
+                                        },
+                                        Object {
+                                          "label": "Tacos",
+                                          "value": "tacos",
+                                        },
+                                      ],
+                                      "outlineColor": undefined,
+                                      "pageSize": 5,
+                                      "placeholder": "Select an option...",
+                                      "screenReaderStatus": [Function],
+                                      "styles": Object {},
+                                      "tabIndex": "0",
+                                      "tabSelectsValue": true,
+                                      "value": null,
+                                    }
+                                  }
+                                  setValue={[Function]}
+                                  theme={
+                                    Object {
+                                      "borderRadius": 4,
+                                      "colors": Object {
+                                        "danger": "#DE350B",
+                                        "dangerLight": "#FFBDAD",
+                                        "neutral0": "hsl(0, 0%, 100%)",
+                                        "neutral10": "hsl(0, 0%, 90%)",
+                                        "neutral20": "hsl(0, 0%, 80%)",
+                                        "neutral30": "hsl(0, 0%, 70%)",
+                                        "neutral40": "hsl(0, 0%, 60%)",
+                                        "neutral5": "hsl(0, 0%, 95%)",
+                                        "neutral50": "hsl(0, 0%, 50%)",
+                                        "neutral60": "hsl(0, 0%, 40%)",
+                                        "neutral70": "hsl(0, 0%, 30%)",
+                                        "neutral80": "hsl(0, 0%, 20%)",
+                                        "neutral90": "hsl(0, 0%, 10%)",
+                                        "primary": "#2684FF",
+                                        "primary25": "#DEEBFF",
+                                        "primary50": "#B2D4FF",
+                                        "primary75": "#4C9AFF",
+                                      },
+                                      "spacing": Object {
+                                        "baseUnit": 4,
+                                        "controlHeight": 38,
+                                        "menuGutter": 8,
+                                      },
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="css-1wy0on6 react-select__indicators"
+                                  >
+                                    <IndicatorSeparator
+                                      clearValue={[Function]}
+                                      cx={[Function]}
+                                      getStyles={[Function]}
+                                      getValue={[Function]}
+                                      hasValue={false}
+                                      isDisabled={false}
+                                      isFocused={false}
+                                      isMulti={false}
+                                      isRtl={false}
+                                      options={
+                                        Array [
+                                          Object {
+                                            "label": "Pizza",
+                                            "value": "pizza",
+                                          },
+                                          Object {
+                                            "label": "Sushi",
+                                            "value": "sushi",
+                                          },
+                                          Object {
+                                            "label": "Tacos",
+                                            "value": "tacos",
+                                          },
+                                        ]
+                                      }
+                                      selectOption={[Function]}
+                                      selectProps={
+                                        Object {
+                                          "backspaceRemovesValue": true,
+                                          "blurInputOnSelect": true,
+                                          "captureMenuScroll": false,
+                                          "className": "react-select-container touched sc-htpNat c3",
+                                          "classNamePrefix": "react-select",
+                                          "closeMenuOnScroll": false,
+                                          "closeMenuOnSelect": true,
+                                          "components": Object {},
+                                          "controlShouldRenderValue": true,
+                                          "defaultInputValue": "",
+                                          "defaultMenuIsOpen": false,
+                                          "defaultValue": null,
+                                          "escapeClearsValue": false,
+                                          "filterOption": [Function],
+                                          "formatGroupLabel": [Function],
+                                          "getOptionLabel": [Function],
+                                          "getOptionValue": [Function],
+                                          "inputValue": "",
+                                          "isDisabled": false,
+                                          "isLoading": false,
+                                          "isMulti": false,
+                                          "isOptionDisabled": [Function],
+                                          "isRtl": false,
+                                          "isSearchable": true,
+                                          "loadingMessage": [Function],
+                                          "maxMenuHeight": 300,
+                                          "menuIsOpen": false,
+                                          "menuPlacement": "bottom",
+                                          "menuPosition": "absolute",
+                                          "menuShouldBlockScroll": false,
+                                          "menuShouldScrollIntoView": true,
+                                          "minMenuHeight": 140,
+                                          "noOptionsMessage": [Function],
+                                          "onBlur": [Function],
+                                          "onChange": [Function],
+                                          "onFocus": [Function],
+                                          "onInputChange": [Function],
+                                          "onMenuClose": [Function],
+                                          "onMenuOpen": [Function],
+                                          "openMenuOnClick": true,
+                                          "openMenuOnFocus": false,
+                                          "options": Array [
+                                            Object {
+                                              "label": "Pizza",
+                                              "value": "pizza",
+                                            },
+                                            Object {
+                                              "label": "Sushi",
+                                              "value": "sushi",
+                                            },
+                                            Object {
+                                              "label": "Tacos",
+                                              "value": "tacos",
+                                            },
+                                          ],
+                                          "outlineColor": undefined,
+                                          "pageSize": 5,
+                                          "placeholder": "Select an option...",
+                                          "screenReaderStatus": [Function],
+                                          "styles": Object {},
+                                          "tabIndex": "0",
+                                          "tabSelectsValue": true,
+                                          "value": null,
+                                        }
+                                      }
+                                      setValue={[Function]}
+                                      theme={
+                                        Object {
+                                          "borderRadius": 4,
+                                          "colors": Object {
+                                            "danger": "#DE350B",
+                                            "dangerLight": "#FFBDAD",
+                                            "neutral0": "hsl(0, 0%, 100%)",
+                                            "neutral10": "hsl(0, 0%, 90%)",
+                                            "neutral20": "hsl(0, 0%, 80%)",
+                                            "neutral30": "hsl(0, 0%, 70%)",
+                                            "neutral40": "hsl(0, 0%, 60%)",
+                                            "neutral5": "hsl(0, 0%, 95%)",
+                                            "neutral50": "hsl(0, 0%, 50%)",
+                                            "neutral60": "hsl(0, 0%, 40%)",
+                                            "neutral70": "hsl(0, 0%, 30%)",
+                                            "neutral80": "hsl(0, 0%, 20%)",
+                                            "neutral90": "hsl(0, 0%, 10%)",
+                                            "primary": "#2684FF",
+                                            "primary25": "#DEEBFF",
+                                            "primary50": "#B2D4FF",
+                                            "primary75": "#4C9AFF",
+                                          },
+                                          "spacing": Object {
+                                            "baseUnit": 4,
+                                            "controlHeight": 38,
+                                            "menuGutter": 8,
+                                          },
+                                        }
+                                      }
+                                    >
+                                      <span
+                                        className="css-d8oujb react-select__indicator-separator"
+                                      />
+                                    </IndicatorSeparator>
+                                    <DropdownIndicator
+                                      clearValue={[Function]}
+                                      cx={[Function]}
+                                      getStyles={[Function]}
+                                      getValue={[Function]}
+                                      hasValue={false}
+                                      innerProps={
+                                        Object {
+                                          "aria-hidden": "true",
+                                          "onMouseDown": [Function],
+                                          "onTouchEnd": [Function],
+                                        }
+                                      }
+                                      isDisabled={false}
+                                      isFocused={false}
+                                      isMulti={false}
+                                      isRtl={false}
+                                      options={
+                                        Array [
+                                          Object {
+                                            "label": "Pizza",
+                                            "value": "pizza",
+                                          },
+                                          Object {
+                                            "label": "Sushi",
+                                            "value": "sushi",
+                                          },
+                                          Object {
+                                            "label": "Tacos",
+                                            "value": "tacos",
+                                          },
+                                        ]
+                                      }
+                                      selectOption={[Function]}
+                                      selectProps={
+                                        Object {
+                                          "backspaceRemovesValue": true,
+                                          "blurInputOnSelect": true,
+                                          "captureMenuScroll": false,
+                                          "className": "react-select-container touched sc-htpNat c3",
+                                          "classNamePrefix": "react-select",
+                                          "closeMenuOnScroll": false,
+                                          "closeMenuOnSelect": true,
+                                          "components": Object {},
+                                          "controlShouldRenderValue": true,
+                                          "defaultInputValue": "",
+                                          "defaultMenuIsOpen": false,
+                                          "defaultValue": null,
+                                          "escapeClearsValue": false,
+                                          "filterOption": [Function],
+                                          "formatGroupLabel": [Function],
+                                          "getOptionLabel": [Function],
+                                          "getOptionValue": [Function],
+                                          "inputValue": "",
+                                          "isDisabled": false,
+                                          "isLoading": false,
+                                          "isMulti": false,
+                                          "isOptionDisabled": [Function],
+                                          "isRtl": false,
+                                          "isSearchable": true,
+                                          "loadingMessage": [Function],
+                                          "maxMenuHeight": 300,
+                                          "menuIsOpen": false,
+                                          "menuPlacement": "bottom",
+                                          "menuPosition": "absolute",
+                                          "menuShouldBlockScroll": false,
+                                          "menuShouldScrollIntoView": true,
+                                          "minMenuHeight": 140,
+                                          "noOptionsMessage": [Function],
+                                          "onBlur": [Function],
+                                          "onChange": [Function],
+                                          "onFocus": [Function],
+                                          "onInputChange": [Function],
+                                          "onMenuClose": [Function],
+                                          "onMenuOpen": [Function],
+                                          "openMenuOnClick": true,
+                                          "openMenuOnFocus": false,
+                                          "options": Array [
+                                            Object {
+                                              "label": "Pizza",
+                                              "value": "pizza",
+                                            },
+                                            Object {
+                                              "label": "Sushi",
+                                              "value": "sushi",
+                                            },
+                                            Object {
+                                              "label": "Tacos",
+                                              "value": "tacos",
+                                            },
+                                          ],
+                                          "outlineColor": undefined,
+                                          "pageSize": 5,
+                                          "placeholder": "Select an option...",
+                                          "screenReaderStatus": [Function],
+                                          "styles": Object {},
+                                          "tabIndex": "0",
+                                          "tabSelectsValue": true,
+                                          "value": null,
+                                        }
+                                      }
+                                      setValue={[Function]}
+                                      theme={
+                                        Object {
+                                          "borderRadius": 4,
+                                          "colors": Object {
+                                            "danger": "#DE350B",
+                                            "dangerLight": "#FFBDAD",
+                                            "neutral0": "hsl(0, 0%, 100%)",
+                                            "neutral10": "hsl(0, 0%, 90%)",
+                                            "neutral20": "hsl(0, 0%, 80%)",
+                                            "neutral30": "hsl(0, 0%, 70%)",
+                                            "neutral40": "hsl(0, 0%, 60%)",
+                                            "neutral5": "hsl(0, 0%, 95%)",
+                                            "neutral50": "hsl(0, 0%, 50%)",
+                                            "neutral60": "hsl(0, 0%, 40%)",
+                                            "neutral70": "hsl(0, 0%, 30%)",
+                                            "neutral80": "hsl(0, 0%, 20%)",
+                                            "neutral90": "hsl(0, 0%, 10%)",
+                                            "primary": "#2684FF",
+                                            "primary25": "#DEEBFF",
+                                            "primary50": "#B2D4FF",
+                                            "primary75": "#4C9AFF",
+                                          },
+                                          "spacing": Object {
+                                            "baseUnit": 4,
+                                            "controlHeight": 38,
+                                            "menuGutter": 8,
+                                          },
+                                        }
+                                      }
+                                    >
+                                      <div
+                                        aria-hidden="true"
+                                        className="css-1ep9fjw react-select__indicator react-select__dropdown-indicator"
+                                        onMouseDown={[Function]}
+                                        onTouchEnd={[Function]}
+                                      >
+                                        <DownChevron>
+                                          <Svg
+                                            size={20}
+                                          >
+                                            <svg
+                                              aria-hidden="true"
+                                              className="css-19bqh2r"
+                                              focusable="false"
+                                              height={20}
+                                              viewBox="0 0 20 20"
+                                              width={20}
+                                            >
+                                              <path
+                                                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                                              />
+                                            </svg>
+                                          </Svg>
+                                        </DownChevron>
+                                      </div>
+                                    </DropdownIndicator>
+                                  </div>
+                                </IndicatorsContainer>
+                              </div>
+                            </Control>
+                          </div>
+                        </SelectContainer>
+                      </Select>
+                    </StateManager>
+                  </StyledComponent>
+                </Styled(StateManager)>
+              </SelectDropdown>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Question>
+`;
+
+exports[`Heading renders correctly as textInput 1`] = `
+.c3 {
+  width: 100%;
+  height: 100%;
+  padding: 0.8em;
+  font-size: 100%;
+  -webkit-transition: border 250ms ease-in-out;
+  transition: border 250ms ease-in-out;
+  border-radius: 10px;
+  border: 2px solid #AAAAAA;
+}
+
+.c3.touched,
+.c3:focus {
+  outline: none;
+  border: 2px solid #4B4B4B;
+}
+
+.c0 {
+  margin: 2vw 0;
+}
+
+.c1 {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #AAAAAA;
+  margin-bottom: 0.5em;
+}
+
+.c2 {
+  width: 95%;
+  height: auto;
+}
+
+@media (max-width:37.5em) {
+  .c0 {
+    margin: 5vw 0;
+  }
+}
+
+<Question
+  questionData={
+    Object {
+      "id": "favFood",
+      "label": "What is your favourite food?",
+      "placeholder": "Pizza",
+      "type": "text",
+    }
+  }
+  responseUpdater={[Function]}
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  margin: 2vw 0;
+
+  ",
+              "
+    @media (max-width: ",
+              "37.5",
+              "em) {
+      ",
+              "
+    margin: 5vw 0;
+  ",
+              "
+    }
+  ",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-size: 1em;
+  font-weight: ",
+                    [Function],
+                    ";
+  text-transform: uppercase;
+  color: ",
+                    [Function],
+                    ";
+
+  margin-bottom: 0.5em;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              What is your favourite food?
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-EHOje",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  width: 95%;
+  height: auto;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-EHOje",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            >
+              <TextInput
+                id="favFood"
+                placeholder="Pizza"
+                responseUpdater={[Function]}
+              >
+                <styled.input
+                  className="touched"
+                  onChange={[Function]}
+                  placeholder="Pizza"
+                >
+                  <StyledComponent
+                    className="touched"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  width: 100%;
+  height: 100%;
+  padding: 0.8em;
+
+  font-size: 100%;
+  color: ",
+                            [Function],
+                            ";
+
+  transition: border 250ms ease-in-out;
+  border-radius: ",
+                            [Function],
+                            ";
+  border: ",
+                            [Function],
+                            ";
+
+  &.touched, &:focus {
+    outline: none;
+    border: ",
+                            [Function],
+                            ";
+  }
+",
+                          ],
+                        },
+                        "displayName": "styled.input",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "input",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onChange={[Function]}
+                    placeholder="Pizza"
+                  >
+                    <input
+                      className="touched c3"
+                      onChange={[Function]}
+                      placeholder="Pizza"
+                    />
+                  </StyledComponent>
+                </styled.input>
+              </TextInput>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Question>
+`;
